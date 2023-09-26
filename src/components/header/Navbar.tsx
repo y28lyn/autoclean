@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -55,8 +56,12 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+                className={`block py-2 pl-3 pr-4 ${
+                  location.pathname === "/"
+                    ? "text-white bg-blue-700 md:bg-transparent md:text-blue-500"
+                    : "text-gray-900"
+                } rounded md:p-0 md:hover:text-blue-500 text-white`}
+                aria-current={location.pathname === "/" ? "page" : undefined}
               >
                 Accueil
               </Link>
@@ -64,7 +69,14 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/tarifs"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 pl-3 pr-4 ${
+                  location.pathname === "/tarifs"
+                    ? "text-white bg-blue-700 md:bg-transparent md:text-blue-500"
+                    : "text-gray-900"
+                } rounded md:p-0 md:hover:text-blue-500 text-white`}
+                aria-current={
+                  location.pathname === "/tarifs" ? "page" : undefined
+                }
               >
                 Tarifs
               </Link>
@@ -72,7 +84,14 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 pl-3 pr-4 ${
+                  location.pathname === "/contact"
+                    ? "text-white bg-blue-700 md:bg-transparent md:text-blue-500"
+                    : "text-gray-900"
+                } rounded md:p-0 md:hover:text-blue-500 text-white`}
+                aria-current={
+                  location.pathname === "/contact" ? "page" : undefined
+                }
               >
                 Contact
               </Link>
