@@ -7,7 +7,7 @@ const Accueil = () => {
         <NavBar />
       </header>
 
-      <main>Hello</main>
+      <main>Accueil</main>
     </>
   );
 };
