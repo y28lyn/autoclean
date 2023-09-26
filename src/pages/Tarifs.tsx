@@ -1,6 +1,6 @@
 import NavBar from "../components/header/Navbar";
 
-const Tarif = () => {
+const Tarifs = () => {
   return (
     <>
       <header>
@@ -12,4 +12,4 @@ const Tarif = () => {
   );
 };
 
-export default Tarif;
+export default Tarifs;

@@ -5,7 +5,7 @@ import { StrictMode } from "react";
 import Root from "./routes/root";
 import ErrorPage from "./pages/Error";
 import Accueil from "./pages/Accueil";
-import Tarif from "./pages/Tarif";
+import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 
 const container = document.createElement("div");
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Accueil />,
       },
       {
-        path: "/tarif",
-        element: <Tarif />,
+        path: "/tarifs",
+        element: <Tarifs />,
       },
       {
         path: "/contact",
