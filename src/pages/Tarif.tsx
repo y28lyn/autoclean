@@ -1,7 +1,11 @@
+import NavBar from "../components/header/Navbar";
+
 const Tarif = () => {
   return (
     <>
-      <header>Coucou</header>
+      <header>
+        <NavBar />
+      </header>
 
       <main>Tarif</main>
     </>

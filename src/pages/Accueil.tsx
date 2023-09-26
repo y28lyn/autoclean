@@ -1,7 +1,11 @@
+import NavBar from "../components/header/Navbar";
+
 const Accueil = () => {
   return (
     <>
-      <header>Accueil</header>
+      <header>
+        <NavBar />
+      </header>
 
       <main>Hello</main>
     </>

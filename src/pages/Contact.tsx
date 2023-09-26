@@ -1,7 +1,11 @@
+import NavBar from "../components/header/Navbar";
+
 const Contact = () => {
   return (
     <>
-      <header>Coucou</header>
+      <header>
+        <NavBar />
+      </header>
 
       <main>Contact</main>
     </>
