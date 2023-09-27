@@ -9,11 +9,7 @@ const Accueil = () => {
       </header>
 
       <main>
-        <AccueilBanner
-          title="Autoclean"
-          content="Lorem ippsum autoclean lorem dolor da leo ipsum doremifasolasido"
-          imageSrc="/banner-certif.jpg"
-        />
+        <AccueilBanner />
       </main>
     </>
   );

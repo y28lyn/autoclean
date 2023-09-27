@@ -1,24 +1,8 @@
-type AccueilBannerProps = {
-  title?: string;
-  content?: string;
-  imageSrc?: string;
-};
-
-const AccueilBanner = (props: AccueilBannerProps) => {
-  const title = props.title !== undefined ? props.title : "";
-  const content = props.content !== undefined ? props.content : "";
-  const imageSrc = props.imageSrc !== undefined ? props.imageSrc : "";
-
+const AccueilBanner = () => {
   return (
     <>
       <div className="bg-gradient-to-r from-blue-700 to-indigo-900 min-h-screen text-white">
-        <div
-          className="bg-cover bg-center min-h-screen flex items-center"
-          //   style={{
-          //     backgroundImage:
-          //       'url("https://images.unsplash.com/photo-1550565076-b2371ea1a324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
-          //   }}
-        >
+        <div className="bg-cover bg-center min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
               loading="lazy"
