@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-transparent py-4 absolute flex justify-center items-center p-6 z-50 h-screen">
+    <nav className="bg-transparent py-4 absolute flex justify-center items-center p-6 z-50 h-fit">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="text-xl font-bold text-white">
           Autoclean
