@@ -1,3 +1,4 @@
+import AccueilBanner from "../components/header/AccueilBanner";
 import NavBar from "../components/header/Navbar";
 
 const Accueil = () => {
@@ -7,7 +8,13 @@ const Accueil = () => {
         <NavBar />
       </header>
 
-      <main>Accueil</main>
+      <main>
+        <AccueilBanner
+          title="Autoclean"
+          content="Lorem ippsum autoclean lorem dolor da leo ipsum doremifasolasido"
+          imageSrc="/banner-certif.jpg"
+        />
+      </main>
     </>
   );
 };
