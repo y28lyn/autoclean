@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import "../../style.css";
+
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -67,17 +69,14 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="hidden lg:flex space-x-4">
-          <a className="text-white" href="https://twitter.com/CreativeTim">
-            <i className="fab fa-twitter"></i>
+          <a className="text-white" href="#">
+            <i className="fab fa-twitter"></i>Twitter
           </a>
-          <a className="text-white" href="https://www.facebook.com/CreativeTim">
-            <i className="fab fa-facebook"></i>
+          <a className="text-white" href="#">
+            <i className="fab fa-facebook"></i>Facebook
           </a>
-          <a
-            className="text-white"
-            href="https://www.instagram.com/CreativeTimOfficial"
-          >
-            <i className="fab fa-instagram"></i>
+          <a className="text-white" href="#">
+            <i className="fab fa-instagram"></i>Insta
           </a>
         </div>
       </div>
