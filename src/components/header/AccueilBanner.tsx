@@ -25,8 +25,12 @@ const AccueilBanner = () => {
               esse eius aliquid.
             </p>
             <div className="space-x-4">
-              <button className="btn btn-white">Réserver</button>
-              <button className="btn btn-white btn-outline">Lire plus</button>
+              <button className="bg-white text-black p-1 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                Réserver
+              </button>
+              <button className="outline p-1 rounded transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                Lire plus
+              </button>
             </div>
           </div>
         </div>
