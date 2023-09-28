@@ -6,10 +6,11 @@ const Accueil = () => {
     <>
       <header>
         <NavBar />
+        <AccueilBanner />
       </header>
 
-      <main>
-        <AccueilBanner />
+      <main id="main" className="h-screen bg-autoclean_blue">
+        a
       </main>
 
       <footer className="h-screen bg-black">a</footer>

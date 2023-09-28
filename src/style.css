@@ -1,3 +1,8 @@
+/* Activer le défilement fluide */
+* {
+  scroll-behavior: smooth;
+}
+
 .link-underline {
   border-bottom-width: 0;
   background-image: linear-gradient(transparent, transparent),
