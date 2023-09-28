@@ -1,7 +1,7 @@
 const AccueilBanner = () => {
   return (
     <>
-      {/* <div className="text-white">
+      <div className="text-white overflow-hidden">
         <div className="bg-cover bg-center min-h-screen flex items-center">
           <div className="absolute inset-0">
             <img
@@ -34,7 +34,7 @@ const AccueilBanner = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
