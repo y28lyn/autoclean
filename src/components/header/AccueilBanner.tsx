@@ -3,22 +3,20 @@ const AccueilBanner = () => {
     <>
       <div className="text-white">
         <div className="bg-cover bg-center flex items-center">
-          <div className="h-screen">
-            <div className="absolute inset-0 ">
-              <img
-                loading="lazy"
-                className="w-full h-full object-cover object-center"
-                src="https://images.unsplash.com/photo-1550565076-b2371ea1a324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                alt=""
-                role="presentation"
-                aria-hidden="true"
-              />
-            </div>
-
-            <div className="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
-
-            <div className="absolute inset-0 block bg-black/60 md:hidden"></div>
+          <div className="absolute inset-0 ">
+            <img
+              loading="lazy"
+              className="w-full h-screen object-cover object-center"
+              src="https://images.unsplash.com/photo-1550565076-b2371ea1a324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt=""
+              role="presentation"
+              aria-hidden="true"
+            />
           </div>
+
+          <div className="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
+
+          <div className="absolute inset-0 block bg-black/60 md:hidden"></div>
 
           <div className="container mx-auto text-center z-50">
             <h1 className="text-5xl font-extrabold mb-4">Autoclean</h1>
