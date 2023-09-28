@@ -1,7 +1,7 @@
 const AccueilBanner = () => {
   return (
     <>
-      <div className="bg-cover bg-center min-h-screen flex items-center text-white">
+      <div className="bg-cover bg-center h-screen flex items-center text-white">
         <div className="absolute inset-0">
           <img
             loading="lazy"

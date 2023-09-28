@@ -8,7 +8,7 @@ const Accueil = () => {
         <NavBar />
       </header>
 
-      <main className="h-[100vh]">
+      <main>
         <AccueilBanner />
       </main>
 
