@@ -25,7 +25,7 @@ const AccueilBanner = () => {
           eius aliquid.
         </p>
         <div className="space-x-4">
-          <button className="outline p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
+          <button className="bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
             <Link to="/tarifs">Réserver</Link>
           </button>
           <button className="outline p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
