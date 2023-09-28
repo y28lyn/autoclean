@@ -8,9 +8,11 @@ const Accueil = () => {
         <NavBar />
       </header>
 
-      <main>
+      <main className="h-[100vh]">
         <AccueilBanner />
       </main>
+
+      <footer className="bg-black h-[100vh]"></footer>
     </>
   );
 };
