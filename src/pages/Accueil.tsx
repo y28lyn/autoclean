@@ -12,7 +12,7 @@ const Accueil = () => {
         <AccueilBanner />
       </main>
 
-      <footer className="bg-black h-[100vh]"></footer>
+      <footer className="bg-black"></footer>
     </>
   );
 };
