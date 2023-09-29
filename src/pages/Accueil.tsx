@@ -9,11 +9,9 @@ const Accueil = () => {
         <AccueilBanner />
       </header>
 
-      <main id="main" className="h-screen bg-autoclean_blue">
-        a
-      </main>
+      <main id="main" className="h-screen bg-autoclean_blue"></main>
 
-      <footer className="h-screen bg-black">a</footer>
+      <footer className="h-screen bg-black"></footer>
     </>
   );
 };
