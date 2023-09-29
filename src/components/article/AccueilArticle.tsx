@@ -99,17 +99,16 @@ const AccueilArticle = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
+        <div className="flex items-center justify-center px-4 py-10 bg-[#0B0705] sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
               Autoclean : Qui sommes nous ?
             </h2>
-            <p className="mt-2 text-base text-gray-600">
+            <p className="mt-2 text-base text-white">
               Entreprise de lavage automobiles
             </p>
 
-            <div>
+            <div className="text-white">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 repellat esse sint illum exercitationem quibusdam voluptatibus
