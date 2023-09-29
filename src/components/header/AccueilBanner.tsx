@@ -18,7 +18,7 @@ const AccueilBanner = () => {
 
       <div className="absolute inset-0 block bg-black/60 md:hidden"></div>
 
-      <div className="container mx-auto text-center z-50 relative">
+      <div className="container mx-auto text-center relative">
         <h1 className="text-5xl font-extrabold mb-4">Autoclean</h1>
         <p className="text-lg opacity-80 mb-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse

@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-transparent fixed w-full z-20 top-0 left-0">
+    <nav className="bg-transparent fixed w-full z-50 top-0 left-0 text-white">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
@@ -19,16 +19,18 @@ const Navbar: React.FC = () => {
               className="h-8 mr-3"
               alt="Autoclean Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap">
               Autoclean
             </span>
           </Link>
         </div>
         <div className="flex md:order-2">
-          <a className="text-white md:block hidden" href="#">
-            07 56 84 73 46
-          </a>
-          <a className="text-white ml-2 md:block hidden" href="#">
+          <p className="text-white md:block hidden">07 56 84 73 46</p>
+          <a
+            className="text-white ml-2 md:block hidden"
+            href="https://www.instagram.com/autoclean.lyon/"
+            target="blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -43,62 +45,83 @@ const Navbar: React.FC = () => {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded={menuOpen ? "true" : "false"}
             onClick={toggleMenu}
           >
             <span className="sr-only">Ouvrir le menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+            {menuOpen ? (
+              // Afficher la croix lorsque le menu est ouvert
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              // Afficher les lignes lorsque le menu est fermé
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            )}
           </button>
-        </div>
-        <div
-          className={`items-center justify-between ${
-            menuOpen ? "block" : "hidden"
-          } w-full md:flex md:w-auto md:order-1`}
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-8 md:mt-0 md:border-0">
-            <li>
-              <Link
-                to="/"
-                className="block py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
-                aria-current="page"
-              >
-                Accueil
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/tarifs"
-                className="block py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
-              >
-                Tarifs
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="block py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          {menuOpen && (
+            // Afficher le menu mobile sous forme de carré blanc en bas de la croix
+            <div
+              className="absolute bottom-0 left-0 top-16 w-full h-fit bg-transparent p-4 z-50"
+              id="navbar-sticky"
+            >
+              <ul className="flex flex-col font-medium bg-white rounded shadow-sm">
+                <li>
+                  <Link
+                    to="/"
+                    className="block py-2 pl-3 pr-4 text-black md:link md:link-underline md:link-underline-black"
+                    aria-current="page"
+                  >
+                    Accueil
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/tarifs"
+                    className="block py-2 pl-3 pr-4 text-black md:link md:link-underline md:link-underline-black"
+                  >
+                    Tarifs
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className="block py-2 pl-3 pr-4 text-black md:link md:link-underline md:link-underline-black"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </nav>

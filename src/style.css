@@ -47,3 +47,18 @@
     0.9
   ); /* Couleur de la poignée au survol */
 }
+
+/* Nav mobile */
+
+.menu-mobile {
+  position: absolute;
+  top: 4em;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Assurez-vous que le menu occupe toute la largeur */
+  height: fit-content;
+  background-color: white; /* Fond blanc */
+  padding: 1rem; /* Espacement intérieur du menu */
+  z-index: 50; /* Assurez-vous que le menu s'affiche au-dessus du reste du contenu */
+  display: block; /* Masquez le menu par défaut */
+}
