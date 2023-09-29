@@ -14,7 +14,7 @@ const Accueil = () => {
         <AccueilArticle />
       </main>
 
-      {/* <footer className="h-screen bg-black"></footer> */}
+      <footer className="h-screen"></footer>
     </>
   );
 };

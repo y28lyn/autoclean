@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="flex md:order-2">
-          <p className="text-white md:block hidden">07 56 84 73 46</p>
+          <p className="text-white md:block hidden">07 56 84 73 46 </p>
           <a
             className="text-white ml-2 md:block hidden"
             href="https://www.instagram.com/autoclean.lyon/"
