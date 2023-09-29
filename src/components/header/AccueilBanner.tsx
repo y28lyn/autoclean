@@ -20,9 +20,8 @@ const AccueilBanner = () => {
 
       <div className="container mx-auto text-center relative">
         <h1 className="text-5xl font-extrabold mb-4">Autoclean</h1>
-        <p className="text-lg opacity-80 mb-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse
-          eius aliquid.
+        <p className="text-xl opacity-80 mb-8">
+          L'excellence dans chaque goutte d'eau.
         </p>
         <div className="space-x-4">
           <button className="bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
