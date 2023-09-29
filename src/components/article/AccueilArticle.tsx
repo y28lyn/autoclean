@@ -92,14 +92,14 @@ const AccueilArticle = () => {
                     </svg>
                   </div>
                   <span className="text-lg font-medium text-white">
-                    Clients satisfaits
+                    À partir de 25€
                   </span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center px-4 py-10 bg-[#0B0705] sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
+        <div className="flex items-center justify-center px-4 py-10 bg-[#000302] sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
               Autoclean : Qui sommes nous ?
@@ -107,8 +107,7 @@ const AccueilArticle = () => {
             <p className="mt-2 text-base text-white">
               Entreprise de lavage automobiles
             </p>
-
-            <div className="text-white">
+            <div className="text-slate-200">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 repellat esse sint illum exercitationem quibusdam voluptatibus
