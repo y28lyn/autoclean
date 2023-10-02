@@ -32,7 +32,9 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed w-full z-50 top-0 left-0 text-white transition ease-in-out duration-300 ${
-        isNavbarBlack ? "bg-[#000302]" : "bg-transparent"
+        isNavbarBlack
+          ? "bg-[#000302] bg-opacity-50 backdrop-blur-lg"
+          : "bg-transparent"
       }`}
     >
       {" "}
