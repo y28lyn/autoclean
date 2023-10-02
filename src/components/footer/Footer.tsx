@@ -7,24 +7,7 @@ const Footer = () => {
           <div className="pt-10">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="sm:flex sm:items-center sm:justify-start sm:space-x-8">
-                <ul className="flex items-center justify-start space-x-8">
-                  <li>
-                    <a
-                      href="#"
-                      title=""
-                      className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                    >
-                      <svg
-                        className="w-6 h-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
-                      </svg>
-                    </a>
-                  </li>
-
+                <ul className="flex flex-wrap items-center justify-start gap-x-7 gap-y-3">
                   <li>
                     <a
                       href="https://www.instagram.com/autoclean.lyon/"
@@ -44,9 +27,6 @@ const Footer = () => {
                       </svg>
                     </a>
                   </li>
-                </ul>
-
-                <ul className="flex flex-wrap items-center justify-start mt-5 gap-x-8 sm:mt-0 gap-y-3">
                   <li>
                     <p className="text-sm text-blue-200 transition-all duration-200">
                       07 56 84 73 46
