@@ -15,10 +15,8 @@ const Accueil = () => {
         <AccueilArticle />
       </main>
 
-      <footer className="h-screen bg-slate-900">
-        <section className="flex items-center justify-center">
-          <AccueilCarousel />
-        </section>
+      <footer className="h-[100vh] bg-slate-900 p-6">
+        <AccueilCarousel />
       </footer>
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../style.css";
 
@@ -20,10 +20,8 @@ const Navbar: React.FC = () => {
       }
     };
 
-    // Ajoutez un gestionnaire d'événements pour le défilement de la fenêtre
     window.addEventListener("scroll", handleScroll);
 
-    // Retirez le gestionnaire d'événements lorsque le composant est démonté
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

@@ -47,17 +47,3 @@
     0.9
   ); /* Couleur de la poignée au survol */
 }
-
-.swiper {
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-
-.Swiper .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  -webkit-box-reflect: below 1px Linear-gradient
-    (transparent, transparent, #0006);
-}
