@@ -1,16 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../style.css";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isNavbarBlack, setIsNavbarBlack] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    // Ajoutez une classe CSS pour le fond noir lorsque vous descendez de 50 pixels
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsNavbarBlack(true);
+      } else {
+        setIsNavbarBlack(false);
+      }
+    };
+
+    // Ajoutez un gestionnaire d'événements pour le défilement de la fenêtre
+    window.addEventListener("scroll", handleScroll);
+
+    // Retirez le gestionnaire d'événements lorsque le composant est démonté
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-transparent fixed w-full z-50 top-0 left-0 text-white">
+    <nav
+      className={`fixed w-full z-50 top-0 left-0 text-white transition ease-in-out duration-300 ${
+        isNavbarBlack ? "bg-[#000302]" : "bg-transparent"
+      }`}
+    >
+      {" "}
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
@@ -146,6 +171,37 @@ const Navbar: React.FC = () => {
               </ul>
             </div>
           )}
+        </div>
+        <div
+          className={`items-center justify-between hidden w-full md:flex md:w-auto md:order-1`}
+          id="navbar-sticky"
+        >
+          <ul className="flex flex-row p-4 md:p-0 mt-4 font-medium md:space-x-8 md:mt-0 md:border-0">
+            <li>
+              <Link
+                to="/"
+                className="py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
+              >
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/tarifs"
+                className="py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
+              >
+                Tarifs
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
