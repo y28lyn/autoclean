@@ -33,7 +33,7 @@ const AccueilCarousel = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center bg-[#000302] pr-10 md:px-10">
+        <div className="flex items-center justify-center bg-[#000302] px-10">
           <Swiper
             navigation={true}
             modules={[Navigation]}
