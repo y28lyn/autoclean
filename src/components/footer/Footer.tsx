@@ -40,7 +40,7 @@ const Footer = () => {
                 <ul className="md:-mt-2 flex flex-row justify-start gap-x-8 gap-y-2">
                   <li>
                     <Link
-                      to="/"
+                      to="/politique_confidentialite"
                       className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
                     >
                       Politique de confidentialité
@@ -48,7 +48,15 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/"
+                      to="/politique_accessibilite"
+                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
+                    >
+                      Politique d'accessibilité
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/mention_legales"
                       className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
                     >
                       Mentions légales

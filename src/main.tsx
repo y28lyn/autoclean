@@ -7,6 +7,9 @@ import ErrorPage from "./pages/Error";
 import Accueil from "./pages/Accueil";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
+import PolitiqueAccessibilite from "./pages/PolitiqueAccessibilite";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import MentionLegales from "./pages/MentionLegales";
 
 const container = document.createElement("div");
 document.body.appendChild(container);
@@ -29,6 +32,18 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/politique_accessibilite",
+        element: <PolitiqueAccessibilite />,
+      },
+      {
+        path: "/politique_confidentialite",
+        element: <PolitiqueConfidentialite />,
+      },
+      {
+        path: "/mention_legales",
+        element: <MentionLegales />,
+      },
     ],
   },
 ]);
@@ -38,5 +53,5 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 );
