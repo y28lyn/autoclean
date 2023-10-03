@@ -13,10 +13,12 @@ const MentionLegales = () => {
 
         <section className="mt-6">
           <h2 className="text-xl font-bold">Responsable du Site Web</h2>
-          <p>Louaï Lageat</p>
-          <p>[Adresse de l'Entreprise]</p>
-          <p>07 56 84 73 46</p>
-          <p>autoclean.lyon@gmail.com</p>
+          <p>Société Autoclean [Forme juridique]</p>
+          <p>Numéro Siret : [Numéro siret]</p>
+          <p>Responsable éditorial : Louaï Lageat</p>
+          <p>Adresse de l'entreprise : [Adresse de l'entreprise]</p>
+          <p>Téléphone : 07 56 84 73 46</p>
+          <p>E-mail : autoclean.lyon@gmail.com</p>
         </section>
 
         <section className="mt-6">

@@ -1,3 +1,5 @@
+import TarifsArticle from "../components/article/TarifsArticle";
+import Footer from "../components/footer/Footer";
 import NavBar from "../components/header/Navbar";
 
 const Tarifs = () => {
@@ -7,9 +9,13 @@ const Tarifs = () => {
         <NavBar />
       </header>
 
-      <main id="main" className="h-screen bg-autoclean_blue"></main>
+      <main id="main" className="pt-10 pb-5 bg-[#000302]">
+        <TarifsArticle />
+      </main>
 
-      <footer className="h-screen bg-black"></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
