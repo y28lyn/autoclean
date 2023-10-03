@@ -24,11 +24,16 @@ const AccueilBanner = () => {
           L'excellence dans chaque goutte d'eau.
         </p>
         <div className="space-x-4">
-          <button className="w-28 bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
-            <Link to="/tarifs">Réserver</Link>
+          <button className="w-25 bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
+            <Link to="/tarifs" className="p-5">
+              Réserver
+            </Link>
           </button>
-          <button className="w-28 outline p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
-            <a href="#main">Lire plus</a>
+
+          <button className="w-25 outline p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
+            <a href="#main" className="p-5">
+              Lire plus
+            </a>
           </button>
         </div>
       </div>

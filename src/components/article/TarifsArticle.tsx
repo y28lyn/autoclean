@@ -1,7 +1,7 @@
 const TarifsArticle = () => {
   return (
     <>
-      <section className="py-10 bg-[#000302] text-white sm:py-16 lg:py-24">
+      <section className="py-10 bg-[#000302] text-white">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
@@ -149,7 +149,7 @@ const TarifsArticle = () => {
                 <h3 className="text-base font-semibold text-autoclean_blue">
                   Supplément
                 </h3>
-                <div className="flex flex-col md:flex-row gap-3">
+                <div className="flex flex-col md:flex-row md:gap-8">
                   <div className="mt-1">
                     <h4 className="text-base font-semibold text-gray-900">
                       Soin cuir
