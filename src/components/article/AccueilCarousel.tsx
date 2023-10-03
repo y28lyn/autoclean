@@ -28,7 +28,7 @@ const AccueilCarousel = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex items-center justify-center bg-[#000302] px-10">
+        <div className="relative flex items-center justify-center bg-[#000302] px-10 pb-16">
           <Swiper
             modules={[Pagination]}
             className="mySwiper text-base text-white w-[80vw] h-[60vh] md:h-[80vh] bg-transparent rounded-xl"
