@@ -15,7 +15,12 @@ const Accueil = () => {
 
       <main id="main">
         <AccueilArticle />
-        <AccueilCarousel />
+        <section className="h-fit first-letter:md:h-screen bg-[#000302] flex flex-col md:items-center justify-center">
+          <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
+            Que faisons-nous ?
+          </h2>
+          <AccueilCarousel />
+        </section>
         <AccueilAvis />
       </main>
 
