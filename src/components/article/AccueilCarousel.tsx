@@ -4,11 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../../style.css";
 
-const slideImages = [
-  "https://images.unsplash.com/photo-1615041611611-e53c16da999b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyd2FzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
-  "https://images.unsplash.com/photo-1575844611093-ed16474b4f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyd2FzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
-  "https://images.unsplash.com/photo-1565689876115-23f4019e888d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhcndhc2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
-];
+const slideImages = ["/car_1.jpg", "/car_2.jpg"];
 
 const AccueilCarousel = () => {
   return (

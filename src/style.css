@@ -47,8 +47,8 @@
 .swiper-pagination-bullet {
   background-color: white; /* Fond blanc */
   border: 1px solid rgb(0, 0, 0); /* Contour blanc */
-  width: 15px; /* Largeur du cercle */
-  height: 15px; /* Hauteur du cercle */
+  width: 10px; /* Largeur du cercle */
+  height: 10px; /* Hauteur du cercle */
   margin: 5px; /* Marge autour du cercle */
 }
 
