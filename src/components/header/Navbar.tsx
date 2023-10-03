@@ -6,21 +6,23 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNavbarBlack, setIsNavbarBlack] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setMenuOpen(!menuOpen);
-  //   // Ajouter ou supprimer la classe 'overflow-hidden' lorsque le menu est ouvert ou fermé
-  //   if (!menuOpen) {
-  //     document.body.classList.add("overflow-hidden");
-  //   } else {
-  //     document.body.classList.remove("overflow-hidden");
-  //   }
-  // };
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    // Ajouter ou supprimer la classe 'overflow-hidden' lorsque le menu est ouvert ou fermé
+    if (!menuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  };
 
   useEffect(() => {
     // Ajoutez une classe CSS pour le fond noir lorsque vous descendez de 50 pixels
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsNavbarBlack(true);
+        // Enregistrez la position de défilement dans localStorage
+        localStorage.setItem("scrollPosition", window.scrollY.toString());
       } else {
         setIsNavbarBlack(false);
       }
@@ -28,7 +30,14 @@ const Navbar: React.FC = () => {
 
     window.addEventListener("scroll", handleScroll);
 
+    // Récupérez la position de défilement depuis localStorage
+    const savedScrollPosition = localStorage.getItem("scrollPosition");
+    if (savedScrollPosition && Number(savedScrollPosition) > 50) {
+      setIsNavbarBlack(true);
+    }
+
     return () => {
+      document.body.classList.remove("overflow-hidden");
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -37,12 +46,17 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed w-full z-50 top-0 left-0 text-white transition ease-in-out duration-300 ${
         isNavbarBlack
-          ? "bg-[#000302] bg-opacity-50 backdrop-blur-lg"
+          ? menuOpen
+            ? "" // Si le menu est ouvert, ne pas appliquer de flou
+            : "bg-[#000302] bg-opacity-50 backdrop-blur-lg" // Appliquer le flou si le menu est fermé
           : "bg-transparent"
       }`}
     >
-      {" "}
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative">
+      <div
+        className={`max-w-screen-xl flex items-center justify-between mx-auto p-3 relative ${
+          menuOpen ? "menu-open-blur" : "" // Classe conditionnelle pour le flou
+        }`}
+      >
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img
@@ -79,7 +93,7 @@ const Navbar: React.FC = () => {
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded={menuOpen ? "true" : "false"}
-            // onClick={toggleMenu}
+            onClick={toggleMenu}
           >
             <span className="sr-only">Ouvrir le menu</span>
             {menuOpen ? (
@@ -121,7 +135,7 @@ const Navbar: React.FC = () => {
           {menuOpen && (
             // Afficher le menu mobile sous forme de carré blanc en bas de la croix
             <div
-              className="absolute bottom-0 left-0 top-16 w-full h-screen bg-[#000302] bg-opacity-50 backdrop-blur-lg p-4 z-50"
+              className="absolute bottom-0 left-0 top-16 w-full h-screen bg-[#000302] bg-opacity-80 backdrop-blur-lg p-4 z-50"
               id="navbar-sticky"
             >
               <ul className="flex flex-col font-medium bg-transpaent text-white rounded shadow-sm">
