@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded={menuOpen ? "true" : "false"}
-            onClick={toggleMenu}
+            // onClick={toggleMenu}
           >
             <span className="sr-only">Ouvrir le menu</span>
             {menuOpen ? (
