@@ -109,11 +109,10 @@ const AccueilArticle = () => {
             </p>
             <div className="text-slate-200 mt-2">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                repellat esse sint illum exercitationem quibusdam voluptatibus
-                eius ipsam voluptatem recusandae eveniet sequi maiores
-                consectetur, doloribus totam sapiente! Ullam, voluptatum
-                architecto?
+                Autoclean est une entreprise dévouée au nettoyage automobile et
+                de mobilier. Forts de notre expertise, nous offrons des services
+                de qualité, mettant en avant notre engagement envers la
+                satisfaction du client.
               </p>
             </div>
           </div>

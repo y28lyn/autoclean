@@ -24,11 +24,10 @@ const AccueilCarousel = () => {
             </p>
             <div className="text-slate-200 mt-2 md:block hidden">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                repellat esse sint illum exercitationem quibusdam voluptatibus
-                eius ipsam voluptatem recusandae eveniet sequi maiores
-                consectetur, doloribus totam sapiente! Ullam, voluptatum
-                architecto?
+                Nous proposons un lavage minutieux pour automobiles et canapés,
+                utilisant des techniques de pointe et des produits écologiques.
+                Notre objectif est de restaurer la propreté et la fraîcheur de
+                vos biens.
               </p>
             </div>
           </div>

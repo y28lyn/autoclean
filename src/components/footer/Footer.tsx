@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -7,16 +9,15 @@ const Footer = () => {
           <div className="pt-10">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="sm:flex sm:items-center sm:justify-start sm:space-x-8">
-                <ul className="flex flex-wrap items-center justify-start gap-x-7 gap-y-3">
+                <ul className="flex flex-wrap items-center justify-start gap-x-2 gap-y-3">
                   <li>
                     <a
                       href="https://www.instagram.com/autoclean.lyon/"
                       target="blank"
-                      title=""
                       className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                     >
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
@@ -28,28 +29,26 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <p className="text-sm text-blue-200 transition-all duration-200">
+                    <p className="text-[12px] md:text-sm text-blue-200 transition-all duration-200">
                       07 56 84 73 46
                     </p>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      title=""
-                      className="text-sm text-blue-200 transition-all duration-200 hover:text-white"
+                    <Link
+                      to="/"
+                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
                     >
                       Politique de confidentialité
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
-                      title=""
-                      className="text-sm text-blue-200 transition-all duration-200 hover:text-white"
+                    <Link
+                      to="/"
+                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
                     >
                       Mention légales
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
