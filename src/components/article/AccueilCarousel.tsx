@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../../style.css";
-import { Navigation } from "swiper/modules";
 
 const slideImages = [
   "https://images.unsplash.com/photo-1615041611611-e53c16da999b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyd2FzaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
@@ -33,15 +33,19 @@ const AccueilCarousel = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center bg-[#000302] px-10">
+        <div className="relative flex items-center justify-center bg-[#000302] px-10">
           <Swiper
-            navigation={true}
-            modules={[Navigation]}
+            modules={[Pagination]}
             className="mySwiper text-base text-white w-[80vw] h-[60vh] md:h-[80vh] bg-transparent rounded-xl"
+            pagination={{ clickable: true }}
           >
             {slideImages.map((imageSrc, index) => (
-              <SwiperSlide key={index}>
-                <img src={imageSrc} alt={`Slide ${index + 1}`} />
+              <SwiperSlide key={index} className="image-container">
+                <img
+                  src={imageSrc}
+                  alt={`Slide ${index + 1}`}
+                  className="h-full w-full object-cover"
+                />
               </SwiperSlide>
             ))}
           </Swiper>
