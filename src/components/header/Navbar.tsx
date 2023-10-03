@@ -6,15 +6,15 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNavbarBlack, setIsNavbarBlack] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-    // Ajouter ou supprimer la classe 'overflow-hidden' lorsque le menu est ouvert ou fermé
-    if (!menuOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-  };
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  //   // Ajouter ou supprimer la classe 'overflow-hidden' lorsque le menu est ouvert ou fermé
+  //   if (!menuOpen) {
+  //     document.body.classList.add("overflow-hidden");
+  //   } else {
+  //     document.body.classList.remove("overflow-hidden");
+  //   }
+  // };
 
   useEffect(() => {
     // Ajoutez une classe CSS pour le fond noir lorsque vous descendez de 50 pixels
