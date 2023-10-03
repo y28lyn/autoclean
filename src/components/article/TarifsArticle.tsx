@@ -140,6 +140,67 @@ const TarifsArticle = () => {
               </div>
             </div>
           </div>
+
+          {/*  Autres  */}
+          <div className="flex flex-col md:flex-row md:gap-6">
+            {/*  Supplément  */}
+            <div className="mt-4 overflow-hidden text-center bg-white border-2 border-gray-100 rounded-md w-42 h-fit md:h-28 py-2">
+              <div className="p-8 py-1 xl:px-8">
+                <h3 className="text-base font-semibold text-autoclean_blue">
+                  Supplément
+                </h3>
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="mt-1">
+                    <h4 className="text-base font-semibold text-gray-900">
+                      Soin cuir
+                    </h4>
+                    <p className="text-2xl font-bold text-black md:text-center">
+                      5€
+                    </p>
+                  </div>
+                  <div className="mt-1">
+                    <h4 className="text-base font-semibold text-gray-900">
+                      Cire pour carrosserie
+                    </h4>
+                    <p className="text-2xl font-bold text-black md:text-center">
+                      5€
+                    </p>
+                  </div>
+                  <div className="mt-1">
+                    <h4 className="text-base font-semibold text-gray-900">
+                      Voiture de luxe
+                    </h4>
+                    <p className="text-2xl font-bold text-black md:text-center">
+                      5€
+                    </p>
+                  </div>
+                  <div className="mt-1">
+                    <h4 className="text-base font-semibold text-gray-900">
+                      Poils de chiens
+                    </h4>
+                    <p className="text-2xl font-bold text-black md:text-center">
+                      10€
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/*  Canapé et tapis  */}
+            <div className="mt-4 overflow-hidden text-center bg-white border-2 border-gray-100 rounded-md w-42 h-28 py-2">
+              <div className="p-8 py-1 xl:px-8">
+                <h3 className="text-base font-semibold text-autoclean_blue">
+                  Canapé et tapis
+                </h3>
+                <div className="mt-1">
+                  <h4 className="text-base font-semibold text-gray-900">
+                    Sur devis
+                  </h4>
+                  <p className="text-2xl font-bold text-black">Prix variable</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
