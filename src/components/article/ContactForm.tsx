@@ -52,7 +52,7 @@ const ContactForm = () => {
                             name=""
                             id=""
                             placeholder="Entrez votre nom et prénom"
-                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 caret-blue-500"
                           />
                         </div>
                       </div>
@@ -67,7 +67,7 @@ const ContactForm = () => {
                             name=""
                             id=""
                             placeholder="Entrez votre e-mail"
-                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 caret-blue-500"
                           />
                         </div>
                       </div>
@@ -81,7 +81,7 @@ const ContactForm = () => {
                             name=""
                             id=""
                             placeholder="Entrez votre message"
-                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-blue-500 focus:border-blue-500 caret-blue-500"
                           ></textarea>
                         </div>
                       </div>
