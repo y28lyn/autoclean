@@ -1,7 +1,7 @@
 const TarifsArticle = () => {
   return (
     <>
-      <section className="py-10 bg-[#000302] text-white">
+      <section className="pb-5 pt-2 bg-[#000302]">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 text-center lg:max-w-full lg:mt-16 lg:grid-cols-3">
             {/*  Citadine  */}

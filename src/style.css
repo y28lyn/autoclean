@@ -47,12 +47,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(23 37 84); /* Couleur du curseur de la scrollbar */
+  background-color: rgb(237, 239, 244); /* Couleur du curseur de la scrollbar */
   border-radius: 3px; /* Coins arrondis du curseur */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(40, 61, 129); /* Couleur du curseur au survol */
+  background-color: rgb(189, 191, 199); /* Couleur du curseur au survol */
 }
 
 /* Carousel */
