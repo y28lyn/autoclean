@@ -21,20 +21,12 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsNavbarBlack(true);
-        // Enregistrez la position de défilement dans localStorage
-        localStorage.setItem("scrollPosition", window.scrollY.toString());
       } else {
         setIsNavbarBlack(false);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    // Récupérez la position de défilement depuis localStorage
-    const savedScrollPosition = localStorage.getItem("scrollPosition");
-    if (savedScrollPosition && Number(savedScrollPosition) > 50) {
-      setIsNavbarBlack(true);
-    }
 
     return () => {
       document.body.classList.remove("overflow-hidden");
