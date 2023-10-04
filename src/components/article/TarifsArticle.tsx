@@ -3,16 +3,6 @@ const TarifsArticle = () => {
     <>
       <section className="py-10 bg-[#000302] text-white">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
-              Tarifs
-            </h2>
-            <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed">
-              Découvrez nos tarifs de lavage automobile, une gamme complète de
-              services de nettoyage pour votre véhicule, à des prix compétitifs.
-            </p>
-          </div>
-
           <div className="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 text-center lg:max-w-full lg:mt-16 lg:grid-cols-3">
             {/*  Citadine  */}
             <div className="overflow-hidden bg-white border-2 border-gray-100 rounded-md">
