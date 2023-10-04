@@ -2,7 +2,7 @@ import AccueilArticle from "../components/article/AccueilArticle";
 import AccueilAvis from "../components/article/AccueilAvis";
 import AccueilCarousel from "../components/article/AccueilCarousel";
 import Footer from "../components/footer/Footer";
-import Banner from "../components/header/AccueilBanner";
+import Banner from "../components/header/Banner";
 import NavBar from "../components/header/Navbar";
 
 const Accueil = () => {
