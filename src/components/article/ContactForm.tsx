@@ -64,6 +64,12 @@ const ContactForm = () => {
                   car chez Autoclean, la qualité prime toujours.
                 </p>
 
+                <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
+                  Pour réserver veuillez nous contacter par téléphone (07 56 84
+                  73 46), par instagram (autoclean.lyon) ou par le formulaire de
+                  contact !
+                </p>
+
                 <img
                   className="relative z-10 max-w-xs mx-auto -mb-16 md:hidden"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line-mobile.svg"
