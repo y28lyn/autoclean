@@ -37,6 +37,7 @@ const Footer = () => {
                     </p>
                   </li>
                 </ul>
+                <div className="md:hidden w-full bg-white h-[0.5px] px-2 my-4 mx-auto"></div>
                 <ul className="md:-mt-2 flex flex-row justify-start gap-x-8 gap-y-2">
                   <li>
                     <Link
