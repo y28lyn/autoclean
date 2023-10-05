@@ -1,13 +1,10 @@
 import TarifsArticle from "../components/article/TarifsArticle";
-import Footer from "../components/footer/Footer";
 import Banner from "../components/header/Banner";
-import NavBar from "../components/header/Navbar";
 
 const Tarifs = () => {
   return (
     <>
       <header>
-        <NavBar />
         <Banner
           title="Tarifs"
           subtitle="Découvrez nos tarifs de lavage automobile, une gamme complète de
@@ -16,17 +13,12 @@ const Tarifs = () => {
           button1Label="Nous contacter"
           button1Link="/contact"
           button2Label="Voir les tarifs"
-          button2Link="#main"
         />
       </header>
 
       <main id="main" className="bg-[#000302] py-10">
         <TarifsArticle />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 };

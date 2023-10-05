@@ -7,7 +7,6 @@ interface BannerProps {
   button1Label: string;
   button1Link: string;
   button2Label: string;
-  button2Link: string;
 }
 
 const Banner: React.FC<BannerProps> = ({
@@ -17,8 +16,14 @@ const Banner: React.FC<BannerProps> = ({
   button1Label,
   button1Link,
   button2Label,
-  button2Link,
 }) => {
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById("main"); // Remplacez par l'ID de la section suivante
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="text-white bg-cover bg-center min-h-screen flex items-center overflow-hidden relative">
       <div className="absolute inset-0">
@@ -46,10 +51,11 @@ const Banner: React.FC<BannerProps> = ({
             </Link>
           </button>
 
-          <button className="w-25 outline p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">
-            <a href={button2Link} className="p-5">
-              {button2Label}
-            </a>
+          <button
+            onClick={scrollToNextSection}
+            className="w-25 outline p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
+          >
+            <span className="p-5">{button2Label}</span>
           </button>
         </div>
       </div>
