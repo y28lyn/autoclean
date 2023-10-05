@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../style.css";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNavbarBlack, setIsNavbarBlack] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -15,6 +16,12 @@ const Navbar: React.FC = () => {
       document.body.classList.remove("overflow-hidden");
     }
   };
+
+  // Fermer le menu et rétablir le défilement lorsque l'emplacement change
+  useEffect(() => {
+    setMenuOpen(false); // Fermer le menu lorsque la page change
+    document.body.classList.remove("overflow-hidden"); // Rétablir le défilement
+  }, [location]);
 
   useEffect(() => {
     // Ajoutez une classe CSS pour le fond noir lorsque vous descendez de 50 pixels

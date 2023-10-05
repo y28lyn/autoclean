@@ -31,7 +31,7 @@ const AccueilCarousel = () => {
         <div className="relative flex items-center justify-center bg-[#000302] px-10 pb-16">
           <Swiper
             modules={[Pagination]}
-            className="mySwiper text-base text-white w-full md:w-[80vw] h-[65vh] md:h-[80vh] bg-transparent rounded shadow-2xl"
+            className="text-base text-white w-full md:w-[80vw] h-[65vh] md:h-[80vh] bg-transparent rounded shadow-2xl"
             pagination={{ clickable: true }}
           >
             {slideImages.map((imageSrc, index) => (
