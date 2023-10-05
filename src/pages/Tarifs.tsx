@@ -20,7 +20,7 @@ const Tarifs = () => {
         />
       </header>
 
-      <main id="main" className="bg-[#000302]">
+      <main id="main" className="bg-[#000302] py-10">
         <TarifsArticle />
       </main>
 
