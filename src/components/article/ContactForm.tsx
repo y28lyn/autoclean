@@ -107,7 +107,7 @@ const ContactForm = () => {
                             name="user_name"
                             id=""
                             placeholder="Entrez votre nom et prénom"
-                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 caret-blue-500"
+                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-autoclean_blue focus:border-autoclean_blue caret-autoclean_blue"
                           />
                         </div>
                       </div>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                             name="user_email"
                             id=""
                             placeholder="Entrez votre e-mail"
-                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 caret-blue-500"
+                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-autoclean_blue focus:border-autoclean_blue caret-autoclean_blue"
                           />
                         </div>
                       </div>
@@ -136,7 +136,7 @@ const ContactForm = () => {
                             name="message"
                             id=""
                             placeholder="Entrez votre message"
-                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-blue-500 focus:border-blue-500 caret-blue-500"
+                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-autoclean_blue focus:border-autoclean_blue caret-autoclean_blue"
                           ></textarea>
                         </div>
                       </div>
@@ -144,7 +144,7 @@ const ContactForm = () => {
                       <div>
                         <button
                           type="submit"
-                          className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-500 border border-transparent rounded-md focus:outline-none hover:bg-blue-600 focus:bg-blue-600"
+                          className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-autoclean_blue border border-transparent rounded-md focus:outline-none hover:bg-[#1c7ca8] focus:bg-[#1c7ca8]"
                         >
                           Envoyez votre message
                         </button>

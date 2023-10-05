@@ -1,10 +1,6 @@
-import Footer from "../components/footer/Footer";
-import Navbar from "../components/header/Navbar";
-
 const MentionLegales = () => {
   return (
     <>
-      <Navbar />
       <div className="bg-[#000302] text-white pb-10 pt-20 px-10 md:p-28">
         <h1 className="text-3xl font-bold">Mentions Légales d'Autoclean</h1>
         <p className="text-sm">
@@ -72,7 +68,6 @@ const MentionLegales = () => {
           </p>
         </section>
       </div>
-      <Footer />
     </>
   );
 };

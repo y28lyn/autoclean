@@ -1,10 +1,7 @@
-import Footer from "../components/footer/Footer";
-import Navbar from "../components/header/Navbar";
-
 const PolitiqueAccessibilite = () => {
   return (
     <>
-      <Navbar />
+      {" "}
       <div className="bg-[#000302] text-white pb-10 pt-20 px-10 md:p-28">
         <h1 className="text-3xl font-bold">
           Politique d'Accessibilité d'Autoclean
@@ -94,7 +91,6 @@ const PolitiqueAccessibilite = () => {
           </p>
         </section>
       </div>
-      <Footer />
     </>
   );
 };
