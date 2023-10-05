@@ -43,6 +43,17 @@ const MentionLegales = () => {
         </section>
 
         <section className="mt-6">
+          <h2 className="text-xl font-bold">
+            Utilisation de Composants de Tailbits
+          </h2>
+          <p>
+            Certaines parties de ce site web utilisent des composants de l'UI
+            kit "Celebration" créés par Tailbits. Ces composants sont utilisés
+            conformément à la licence applicable de Tailbits.
+          </p>
+        </section>
+
+        <section className="mt-6">
           <h2 className="text-xl font-bold">Propriété Intellectuelle</h2>
           <p>
             Tous les contenus, textes, images et éléments graphiques présents
