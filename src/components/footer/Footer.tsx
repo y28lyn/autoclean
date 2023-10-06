@@ -6,7 +6,7 @@ const Footer = () => {
       <section className="pb-10 pt-1 bg-[#000302]">
         <div className="w-[95%] md:w-[98%] bg-white h-[1px] px-2 mx-auto"></div>
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="pt-10">
+          <div className="md:pt-10 pt-6">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="sm:flex sm:items-center sm:justify-start sm:space-x-8">
                 <ul className="flex flex-row justify-start gap-x-8 gap-y-3">
