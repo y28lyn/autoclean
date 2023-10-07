@@ -70,9 +70,11 @@
   transition: background-color 0.3s, color 0.3s !important; /* Animation lors du survol */
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: grey !important; /* Nouvelle couleur du texte au survol */
+@media screen and (min-width: 768px) {
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: grey !important; /* Nouvelle couleur du texte au survol */
+  }
 }
 
 /* Styles pour les bullets de pagination */
