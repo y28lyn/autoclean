@@ -32,13 +32,16 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <p className="text-[12px] md:text-sm text-blue-200 transition-all duration-200">
+                    <a
+                      href="tel:07 56 84 73 46"
+                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
+                    >
                       07 56 84 73 46
-                    </p>
+                    </a>
                   </li>
                 </ul>
                 <div className="md:hidden w-full bg-white h-[0.5px] px-2 my-4 mx-auto"></div>
-                <ul className="md:-mt-2 flex flex-row justify-start gap-x-8 gap-y-2">
+                <ul className="flex flex-row justify-start gap-x-8 gap-y-2">
                   <li>
                     <Link
                       to="/politique_confidentialite"

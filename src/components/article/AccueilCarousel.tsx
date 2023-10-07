@@ -1,10 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import "../../style.css";
 
-const slideImages = ["/car_1.jpg", "/car_2.jpg"];
+const slideImages = ["/car_1.jpg", "/car_2.jpg", "/car_3.jpg", "/car_4.jpg"];
 
 const AccueilCarousel = () => {
   return (
@@ -30,9 +32,15 @@ const AccueilCarousel = () => {
         </div>
         <div className="relative flex items-center justify-center bg-[#000302] px-10 pb-16">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
             className="text-base text-white w-full md:w-[80vw] h-[65vh] md:h-[80vh] bg-transparent rounded shadow-2xl"
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+              bulletClass: "swiper-pagination-bullet", // Classe pour les bullets
+              bulletActiveClass: "swiper-pagination-bullet-active", // Classe pour le bullet actif
+            }}
+            navigation={true}
           >
             {slideImages.map((imageSrc, index) => (
               <SwiperSlide key={index} className="image-container">
