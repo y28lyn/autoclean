@@ -168,7 +168,10 @@ const ContactForm = () => {
                 </div>
               </div>
               <button className="mt-6 w-full bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:scale-110 duration-300">
-                <a href="tel:0756847346" className="font-semibold">
+                <a
+                  href="tel:0756847346"
+                  className="font-semibold p-[3rem] md:p-[6.7rem]"
+                >
                   Appelez-nous au 07 56 84 73 46
                 </a>
               </button>
