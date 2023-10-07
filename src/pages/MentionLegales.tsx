@@ -9,12 +9,22 @@ const MentionLegales = () => {
 
         <section className="mt-6">
           <h2 className="text-xl font-bold">Responsable du Site Web</h2>
-          <p>Société Autoclean [Forme juridique]</p>
-          <p>Numéro Siret : [Numéro siret]</p>
+          <p>Autoclean entreprise individuelle</p>
+          <p>Numéro Siret : 97913180200014</p>
           <p>Responsable éditorial : Louaï Lageat</p>
-          <p>Adresse de l'entreprise : [Adresse de l'entreprise]</p>
+          <p>
+            Adresse de l'entreprise : 6 Montée du vieux pont,
+            Charbonnières-les-Bains, France
+          </p>
           <p>Téléphone : 07 56 84 73 46</p>
           <p>E-mail : autoclean.lyon@gmail.com</p>
+        </section>
+
+        <section className="mt-6">
+          <h2 className="text-xl font-bold">Hébergeur du Site Web</h2>
+          <p>OVH SAS (Société par action simplifiée)</p>
+          <p>Siège social : 2 rue Kellermann, 59100 Roubaix, France</p>
+          <p>Téléphone : 1007 </p>
         </section>
 
         <section className="mt-6">
