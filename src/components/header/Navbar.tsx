@@ -69,7 +69,8 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="flex md:order-2">
-          <p className="text-white md:block hidden">07 56 84 73 46 </p>
+          <p className="text-white md:block hidden">07 56 84 73 46</p>
+          <span className="ml-2 bg-white my-auto rounded-2xl w-1 h-1 hidden md:block"></span>
           <a
             className="text-white ml-2 md:block hidden"
             href="https://www.instagram.com/autoclean.lyon/"
@@ -86,6 +87,31 @@ const Navbar: React.FC = () => {
               <circle cx="11.994" cy="11.979" r="3.003"></circle>
             </svg>
           </a>
+          <a
+            className="text-white ml-2 -mt-[1px] md:block hidden"
+            href="https://www.facebook.com/profile.php?id=61552207017452"
+            target="blank"
+          >
+            <svg
+              fill="white"
+              width="26"
+              height="26"
+              viewBox="-5.5 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path>{" "}
+              </g>
+            </svg>
+          </a>
+
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
@@ -167,24 +193,52 @@ const Navbar: React.FC = () => {
                 <li>
                   <p className="block py-2 pl-3 pr-4">07 56 84 73 46</p>
                 </li>
-                <li>
-                  <a
-                    className="block py-2 pr-4 ml-2 "
-                    href="https://www.instagram.com/autoclean.lyon/"
-                    target="blank"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="white"
+                <div className="flex flex-row">
+                  <li>
+                    <a
+                      className="block py-2 pr-4 ml-2 "
+                      href="https://www.instagram.com/autoclean.lyon/"
+                      target="blank"
                     >
-                      <path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path>
-                      <circle cx="11.994" cy="11.979" r="3.003"></circle>
-                    </svg>
-                  </a>
-                </li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                      >
+                        <path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path>
+                        <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                      </svg>
+                    </a>
+                  </li>
+                  <li className="-ml-2">
+                    <a
+                      className="block py-2 pr-4 ml-2 -mt-[1px]"
+                      href="https://www.facebook.com/profile.php?id=61552207017452"
+                      target="blank"
+                    >
+                      <svg
+                        fill="white"
+                        width="26"
+                        height="26"
+                        viewBox="-5.5 0 32 32"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path>{" "}
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
               </ul>
             </div>
           )}
