@@ -1,8 +1,8 @@
 const TarifsArticle = () => {
   return (
-    <section className="pt-10 pb-5 px-4 lg:px-8">
+    <section className="pt-10 md:pt-0 pb-5 px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 gap-6 mt-8 lg:grid-cols-3 lg:mt-16">
+        <div className="grid grid-cols-1 gap-6 mt-8 lg:grid-cols-3 lg:mt-6">
           {/* Citadine */}
           <div className="bg-white border-2 border-gray-100 rounded-sm overflow-hidden shadow-lg">
             <div className="p-8 xl:px-12">
