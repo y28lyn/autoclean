@@ -1,4 +1,4 @@
-# <img src="https://github.com/y28lyn/autoclean/assets/97447648/9b4a885a-d059-46b1-8dc4-5059e5e8bf14" alt="Nom de l'image" width="300" height="200"> Site Web Autoclean
+# <img src="https://github.com/y28lyn/autoclean/assets/97447648/9b4a885a-d059-46b1-8dc4-5059e5e8bf14" alt="Nom de l'image" width="30" height="30"> Site Web Autoclean
 
 ## Description
 
