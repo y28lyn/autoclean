@@ -19,7 +19,7 @@ const BannerArticle = () => {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32 justify-center flex">
       <div className="container px-4 md:px-6 text-center">
         <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Nos gammes de lavages
