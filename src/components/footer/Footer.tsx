@@ -9,12 +9,30 @@ const Footer = () => {
           <div className="md:pt-10 pt-6">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="sm:flex sm:items-center sm:justify-start sm:space-x-8">
-                <ul className="flex flex-row justify-start gap-x-8 gap-y-3">
+                <ul className="flex flex-col md:flex-row justify-center items-center md:items-start gap-x-8 gap-y-2 md:mb-[2px]">
+                  <li>
+                    <Link
+                      to="/politique_confidentialite"
+                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-400"
+                    >
+                      Politique de confidentialité
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/mention_legales"
+                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-400"
+                    >
+                      Mentions légales
+                    </Link>
+                  </li>
+                </ul>
+                <ul className="flex flex-row justify-center items-center md:items-start gap-x-8 gap-y-2 md:mb-[2px] md:mt-2 mt-4">
                   <li>
                     <a
                       href="https://www.instagram.com/autoclean.lyon/"
                       target="blank"
-                      className="flex flex-row gap-x-1 text-blue-200 transition-all duration-200 hover:text-white"
+                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-400"
                     >
                       <svg
                         className="w-5 h-5 md:w-6 md:h-6"
@@ -28,16 +46,15 @@ const Footer = () => {
                       </svg>
                     </a>
                   </li>
-                  <li className="-mt-[3px] md:-mt-[1px]">
+                  <li>
                     <a
-                      className="flex flex-row gap-x-1 text-blue-200 transition-all duration-200 hover:text-white"
+                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-400"
                       href="https://www.facebook.com/profile.php?id=61552207017452"
                       target="blank"
                     >
                       <svg
                         fill="currentColor"
-                        width="26"
-                        height="26"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         viewBox="-5.5 0 32 32"
                         version="1.1"
                         xmlns="http://www.w3.org/2000/svg"
@@ -54,38 +71,10 @@ const Footer = () => {
                       </svg>
                     </a>
                   </li>
-                  <li className="-mt-[3px] md:mt-0">
-                    <a
-                      href="tel:07 56 84 73 46"
-                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
-                    >
-                      07 56 84 73 46
-                    </a>
-                  </li>
-                </ul>
-                <div className="md:hidden w-full bg-white h-[0.8px] px-2 my-4 mx-auto"></div>
-                <ul className="flex flex-row justify-start gap-x-8 gap-y-2 md:mb-[2px]">
-                  <li>
-                    <Link
-                      to="/politique_confidentialite"
-                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
-                    >
-                      Politique de confidentialité
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/mention_legales"
-                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
-                    >
-                      Mentions légales
-                    </Link>
-                  </li>
                 </ul>
               </div>
-
-              <p className="mt-6 text-sm text-blue-200 lg:mt-0">
-                © 2023 Autoclean
+              <p className="mt-6 text-sm text-white md:text-base text-center lg:mt-0">
+                © 2024 Autoclean
               </p>
             </div>
           </div>
