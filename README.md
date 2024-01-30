@@ -4,6 +4,8 @@
 
 Le site web "Autoclean" est une vitrine en ligne destinée à présenter l'entreprise et ses services. Il a été développé en utilisant les technologies React.js, TypeScript et Tailwind CSS. Leur site web vise à informer leurs visiteurs sur qui ils sont, ce qu'ils font, leurs tarifs, et comment les contacter.
 
+<img width="949" alt="image" src="https://github.com/y28lyn/autoclean/assets/97447648/814dd495-2e66-45f1-b153-114525b20998">
+
 ## Fonctionnalités
 
 - **Accueil** : Une page d'accueil accueillante avec une brève présentation de l'entreprise et une section de mise en avant de leurs services.
