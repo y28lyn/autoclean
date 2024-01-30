@@ -6,8 +6,8 @@ const AccueilAvis = () => {
           <div className="text-center">
             <h2 className="text-3xl font-semibold">
               <span className="border-b-4 border-autoclean_blue">
-                Des clients du lavage automobile Autoclean, venant de tous
-                horizons, nous ont fait confiance, consolidant notre réputation.
+                Des clients du lavage Autoclean, venant de tous horizons, nous
+                ont fait confiance, consolidant notre réputation.
               </span>
             </h2>
           </div>

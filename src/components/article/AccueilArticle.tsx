@@ -104,15 +104,13 @@ const AccueilArticle = () => {
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
               Qui sommes-nous ?
             </h2>
-            <p className="mt-2 text-base text-white">
-              Entreprise de lavage automobiles
-            </p>
+            <p className="mt-2 text-base text-white">Entreprise de nettoyage</p>
             <div className="text-slate-200 mt-2">
               <p>
-                Autoclean est une entreprise dévouée au nettoyage automobile et
-                de mobilier. Forts de notre expertise, nous offrons des services
-                de qualité, mettant en avant notre engagement envers la
-                satisfaction du client.
+                Autoclean, spécialiste du nettoyage, vous accompagne pour
+                redonner éclat et propreté à votre voiture, vitres et canapés.
+                Notre engagement envers des services de qualité supérieure et
+                sur mesure garantit votre entière satisfaction.
               </p>
             </div>
           </div>

@@ -75,14 +75,6 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/politique_accessibilite"
-                      className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
-                    >
-                      Politique d'accessibilité
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       to="/mention_legales"
                       className="text-[12px] md:text-sm text-blue-200 transition-all duration-200 hover:text-white"
                     >

@@ -22,10 +22,11 @@ const AccueilCarousel = () => {
             </p>
             <div className="text-slate-200 mt-2 md:block hidden">
               <p>
-                Nous proposons un lavage minutieux pour automobiles et canapés,
-                utilisant des techniques de pointe et des produits écologiques.
-                Notre objectif est de restaurer la propreté et la fraîcheur de
-                vos biens.
+                Chez Autoclean, nous vous offrons un lavage minutieux pour
+                automobiles, vitres et canapés, avec l'utilisation de techniques
+                de pointe et de produits écologiques. Notre priorité est de
+                restaurer la propreté et la fraîcheur de vos biens, pour votre
+                entière satisfaction.
               </p>
             </div>
           </div>

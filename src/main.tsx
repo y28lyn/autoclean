@@ -7,9 +7,11 @@ import ErrorPage from "./pages/Error";
 import Accueil from "./pages/Accueil";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
-import PolitiqueAccessibilite from "./pages/PolitiqueAccessibilite";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import MentionLegales from "./pages/MentionLegales";
+import Automobile from "./pages/Automobile";
+import Vitrage from "./pages/Vitrage";
+import Textile from "./pages/Textile";
 
 const container = document.createElement("div");
 document.body.appendChild(container);
@@ -29,12 +31,20 @@ const router = createBrowserRouter([
         element: <Tarifs />,
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/automobile",
+        element: <Automobile />,
       },
       {
-        path: "/politique_accessibilite",
-        element: <PolitiqueAccessibilite />,
+        path: "/vitrage",
+        element: <Vitrage />,
+      },
+      {
+        path: "/textile",
+        element: <Textile />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         path: "/politique_confidentialite",
