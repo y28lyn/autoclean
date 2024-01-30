@@ -1,3 +1,4 @@
+import BannerArticle from "../components/article/BannerArticle";
 import ComparisonSlider from "../components/article/ComparaisonSlider";
 import Banner from "../components/header/Banner";
 
@@ -17,8 +18,8 @@ const Automobile = () => {
 
       <main id="main" className="bg-[#000302] py-10">
         <section className="flex flex-col justify-center items-center md:grid grid-cols-1 lg:grid-cols-2 gap-2">
-          <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto md:text-left md:px-0 px-6 mb-4 md:mb-0">
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
+          <div className="container xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto px-4 md:px-6 text-left md:mb-0 mb-6">
+            <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Nos lavages automobiles
             </h2>
             <div className="text-slate-200 mt-2">
@@ -29,11 +30,9 @@ const Automobile = () => {
               </p>
             </div>
           </div>
-          <ComparisonSlider
-            topImage="https://images.unsplash.com/photo-1536796423601-e9733a86d257?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            bottomImage="https://images.unsplash.com/photo-1587350855660-86c85419a884?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          />
+          <ComparisonSlider topImage="/before.jpg" bottomImage="/after.jpg" />
         </section>
+        <BannerArticle />
       </main>
     </>
   );
