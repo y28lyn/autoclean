@@ -37,7 +37,7 @@ const BannerArticle = () => {
                 }}
                 width="300"
               />
-              <p className="mt-2 text-gray-200 underline">{image.caption}</p>
+              <p className="mt-2 text-gray-200 font-bold">{image.caption}</p>
             </div>
           ))}
         </div>
