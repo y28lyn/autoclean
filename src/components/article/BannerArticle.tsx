@@ -3,18 +3,18 @@ const BannerArticle = () => {
   const images = [
     {
       src: "https://images.unsplash.com/photo-1639640163962-9e845bd7294a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Voiture citadine",
+      alt: "Photo d'une voiture citadine",
       caption: "Citadine",
     },
     {
       src: "https://images.unsplash.com/photo-1606611013016-969c19ba27bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "SUV",
+      alt: "Photot d'un SUV",
       caption: "SUV",
     },
     {
-      src: "https://images.unsplash.com/photo-1592853625601-bb9d23da12fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Voiture de luxe",
-      caption: "Luxe",
+      src: "https://images.unsplash.com/photo-1605410791216-3d9653a95667?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Photo d'un monospace",
+      caption: "Monospace",
     },
   ];
 
@@ -37,7 +37,7 @@ const BannerArticle = () => {
                 }}
                 width="300"
               />
-              <p className="mt-2 text-gray-200">{image.caption}</p>
+              <p className="mt-2 text-gray-200 underline">{image.caption}</p>
             </div>
           ))}
         </div>

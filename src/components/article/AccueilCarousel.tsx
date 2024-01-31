@@ -20,7 +20,7 @@ const AccueilCarousel = () => {
             <p className="mt-2 text-base text-white">
               Voici quelques résultats de nos lavages
             </p>
-            <div className="text-slate-200 mt-2 md:block hidden">
+            <div className="text-slate-200 mt-2">
               <p>
                 Chez Autoclean, nous vous offrons un lavage minutieux pour
                 automobiles, vitres et canapés, avec l'utilisation de techniques

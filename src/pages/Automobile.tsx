@@ -1,5 +1,6 @@
 import BannerArticle from "../components/article/BannerArticle";
 import ComparisonSlider from "../components/article/ComparaisonSlider";
+import TarifList from "../components/article/TarifList";
 import Banner from "../components/header/Banner";
 
 const Automobile = () => {
@@ -33,6 +34,7 @@ const Automobile = () => {
           <ComparisonSlider topImage="/before.jpg" bottomImage="/after.jpg" />
         </section>
         <BannerArticle />
+        <TarifList />
       </main>
     </>
   );
