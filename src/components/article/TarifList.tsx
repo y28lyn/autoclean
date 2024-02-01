@@ -1,9 +1,15 @@
 interface Plan {
   title: string;
   iconColor: string;
-  features: string[];
-  description: string;
-  price: string;
+  features: {
+    name: string;
+    prices: {
+      citadine: string;
+      suv: string;
+      monospace: string;
+    };
+  }[];
+  description?: string[];
 }
 
 const plans: Plan[] = [
@@ -11,34 +17,106 @@ const plans: Plan[] = [
     title: "Nettoyage simple",
     iconColor: "text-green-500",
     features: [
-      "Access to basic features",
-      "24/7 customer support",
-      "1GB storage",
+      {
+        name: "Intérieur standard",
+        prices: {
+          citadine: "35€",
+          suv: "40€",
+          monospace: "50€",
+        },
+      },
+      {
+        name: "Intérieur complet",
+        prices: {
+          citadine: "40€",
+          suv: "75€",
+          monospace: "30€",
+        },
+      },
+      {
+        name: "Nettoyage extérieur",
+        prices: {
+          citadine: "45€",
+          suv: "80€",
+          monospace: "35€",
+        },
+      },
     ],
-    description: "Affordable options for those on a tight budget.",
-    price: "$19.99/month",
+    description: [
+      "Aspirateur, plastiques, vitres intérieures",
+      "Standard + shampoing sièges, tapis, moquette",
+      "Carrosserie, jantes, vitres, pneus, intérieur des roues",
+    ],
   },
   {
     title: "Nettoyage complet",
     iconColor: "text-yellow-500",
     features: [
-      "Access to all features",
-      "Priority customer support",
-      "10GB storage",
+      {
+        name: "Intérieur standard",
+        prices: {
+          citadine: "35€",
+          suv: "65€",
+          monospace: "25€",
+        },
+      },
+      {
+        name: "Intérieur complet",
+        prices: {
+          citadine: "40€",
+          suv: "75€",
+          monospace: "30€",
+        },
+      },
+      {
+        name: "Nettoyage extérieur",
+        prices: {
+          citadine: "45€",
+          suv: "80€",
+          monospace: "35€",
+        },
+      },
     ],
-    description: "A balance between cost and quality.",
-    price: "$49.99/month",
+    description: [
+      "Aspirateur, plastiques, vitres intérieures",
+      "Standard + shampoing sièges, tapis, moquette",
+      "Carrosserie, jantes, vitres, pneus, intérieur des roues",
+    ],
   },
   {
     title: "Extras",
     iconColor: "text-red-500",
     features: [
-      "Access to all features",
-      "Dedicated customer support",
-      "Unlimited storage",
+      {
+        name: "Soin du cuir",
+        prices: {
+          citadine: "5€",
+          suv: "6€",
+          monospace: "8€",
+        },
+      },
+      {
+        name: "Cire pour carroserie",
+        prices: {
+          citadine: "5€",
+          suv: "6€",
+          monospace: "8€",
+        },
+      },
+      {
+        name: "Poils d'animaux",
+        prices: {
+          citadine: "10€",
+          suv: "12€",
+          monospace: "14€",
+        },
+      },
     ],
-    description: "High-end options for those seeking the best quality.",
-    price: "$99.99/month",
+    description: [
+      "Nettoyage et traitement spécial pour le cuir",
+      "Application de cire pour la carrosserie",
+      "Élimination des poils d'animaux et traitement anti-allergène",
+    ],
   },
 ];
 
@@ -49,20 +127,48 @@ const TarifList: React.FC = () => {
         Nos tarifs
       </h2>
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {plans.map((plan, index) => (
+        {plans.map((plan, planIndex) => (
           <div
-            key={index}
-            className="flex flex-col items-center bg-white shadow-md rounded-lg p-6"
+            key={planIndex}
+            className="flex flex-col items-center bg-white shadow-md rounded p-6"
           >
             <DollarSignIcon className={`w-12 h-12 ${plan.iconColor} mb-4`} />
             <h2 className="text-2xl font-bold mb-2">{plan.title}</h2>
-            <ul className="text-left mb-4">
-              {plan.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
+            <ul className="text-center mb-4">
+              {plan.features.map((feature, featureIndex) => (
+                <li key={featureIndex} className="mt-6">
+                  <div className="h-[1px] bg-[#000302] my-6"></div>
+                  <div className="text-center">
+                    <p>{feature.name}</p>
+                    {plan.description && plan.description[featureIndex] && (
+                      <p className="text-gray-600 text-center">
+                        {plan.description[featureIndex]}
+                      </p>
+                    )}
+                    <div className="flex justify-around mt-2">
+                      <div>
+                        <p className="text-md">Citadine</p>
+                        <p className="text-xl font-bold">
+                          {feature.prices.citadine}
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-md">SUV</p>
+                        <p className="text-xl font-bold">
+                          {feature.prices.suv}
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-md">Monospace</p>
+                        <p className="text-xl font-bold">
+                          {feature.prices.monospace}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               ))}
             </ul>
-            <p className="text-gray-600 text-center">{plan.description}</p>
-            <p className="text-2xl font-bold mt-4">{plan.price}</p>
           </div>
         ))}
       </div>
