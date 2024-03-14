@@ -6,7 +6,7 @@ const AccueilArticle = () => {
           <div className="absolute inset-0">
             <img
               className="object-cover object-top w-full h-full"
-              src="https://images.unsplash.com/photo-1643808971709-155fdde38397?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGNhciUyMHdhc2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+              src="https://images.unsplash.com/photo-1550950546-89382964f920?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
@@ -20,7 +20,7 @@ const AccueilArticle = () => {
               </h3>
               <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-autoclean_blue rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-700 rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const AccueilArticle = () => {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-autoclean_blue rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-700 rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const AccueilArticle = () => {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-autoclean_blue rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-700 rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const AccueilArticle = () => {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-autoclean_blue rounded-full">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-700 rounded-full">
                     <svg
                       className="w-3.5 h-3.5 text-white"
                       xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/politique_confidentialite"
-                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-400"
+                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-500"
                     >
                       Politique de confidentialité
                     </Link>
@@ -21,7 +21,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/mention_legales"
-                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-400"
+                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-500"
                     >
                       Mentions légales
                     </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <a
                       href="https://www.instagram.com/autoclean.lyon/"
                       target="blank"
-                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-400"
+                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-500"
                     >
                       <svg
                         className="w-5 h-5 md:w-6 md:h-6"
@@ -48,7 +48,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-400"
+                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-500"
                       href="https://www.facebook.com/profile.php?id=61552207017452"
                       target="blank"
                     >
