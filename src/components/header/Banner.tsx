@@ -18,7 +18,7 @@ const Banner: React.FC<BannerProps> = ({
   button2Label,
 }) => {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("main"); // Remplacez par l'ID de la section suivante
+    const nextSection = document.getElementById("main");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -42,7 +42,9 @@ const Banner: React.FC<BannerProps> = ({
       <div className="absolute inset-0 block bg-black/60 md:hidden"></div>
 
       <div className="container mx-auto text-center relative">
-        <h1 className="text-5xl font-extrabold mb-4">{title}</h1>
+        <h1 className="text-5xl font-extrabold mb-4 max-w-sm md:max-w-full">
+          {title}
+        </h1>
         <p className="text-xl opacity-80 mb-8 px-6 md:px-64">{subtitle}</p>
         <div className="space-x-4">
           <button className="w-25 bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300">

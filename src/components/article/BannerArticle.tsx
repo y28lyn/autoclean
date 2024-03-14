@@ -8,8 +8,8 @@ import "../../style.css";
 
 interface ImageData {
   src: string;
-  alt: string;
-  caption: string;
+  alt?: string;
+  caption?: string;
 }
 
 interface Props {

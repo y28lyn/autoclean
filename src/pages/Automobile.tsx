@@ -1,9 +1,121 @@
 import BannerArticle from "../components/article/BannerArticle";
 import ComparisonSlider from "../components/article/ComparaisonSlider";
-import TarifList from "../components/article/TarifList";
+import PlanList from "../components/article/PlanList";
 import Banner from "../components/header/Banner";
 
 const Automobile = () => {
+  const plans = [
+    {
+      title: "Nettoyage simple",
+      iconColor: "text-green-500",
+      features: [
+        {
+          name: "Intérieur standard",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "35€",
+            second: "40€",
+            third: "50€",
+          },
+        },
+        {
+          name: "Avec nettoyage extérieur",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "45€",
+            second: "50€",
+            third: "60€",
+          },
+        },
+      ],
+      description: [
+        "Aspirateur, plastiques, vitres intérieures",
+        "Standard + shampoing sièges, tapis, moquette",
+        "Carrosserie, jantes, vitres, pneus, intérieur des roues",
+      ],
+    },
+    {
+      title: "Nettoyage complet",
+      iconColor: "text-yellow-500",
+      features: [
+        {
+          name: "Intérieur complet",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "40€",
+            second: "50€",
+            third: "60€",
+          },
+        },
+        {
+          name: "Avec nettoyage extérieur",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "50€",
+            second: "60€",
+            third: "70€",
+          },
+        },
+      ],
+      description: [
+        "Shampoing sièges, tapis, moquette",
+        "Carrosserie, jantes, vitres, pneus",
+      ],
+    },
+    {
+      title: "Extras",
+      iconColor: "text-red-500",
+      features: [
+        {
+          name: "Soin du cuir",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "5€",
+            second: "6€",
+            third: "8€",
+          },
+        },
+        {
+          name: "Poils d'animaux",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "10€",
+            second: "12€",
+            third: "14€",
+          },
+        },
+      ],
+      description: [
+        "Nettoyage et traitement spécial pour le cuir",
+        "Élimination des poils d'animaux",
+      ],
+    },
+  ];
+
   const gammes = [
     {
       src: "https://images.unsplash.com/photo-1639640163962-9e845bd7294a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -47,8 +159,8 @@ const Automobile = () => {
           title="Lavage automobile"
           subtitle="Redonnez vie à votre voiture avec notre lavage professionnel."
           backgroundImageUrl="https://images.unsplash.com/photo-1594051673969-172a6f721d3c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          button1Label="Réserver"
-          button1Link="/tarifs"
+          button1Label="Vitrage"
+          button1Link="/vitrage"
           button2Label="Lire plus"
         />
       </header>
@@ -67,10 +179,13 @@ const Automobile = () => {
               </p>
             </div>
           </div>
-          <ComparisonSlider topImage="/before.jpg" bottomImage="/after.jpg" />
+          <ComparisonSlider
+            topImage="/before_auto.jpg"
+            bottomImage="/after_auto.jpg"
+          />
         </section>
         <BannerArticle images={gammes} title="Nos gammes de lavages" />
-        <TarifList />
+        <PlanList plans={plans} />
         <BannerArticle images={exemples} title="Voici quelques exemples" />
       </main>
     </>

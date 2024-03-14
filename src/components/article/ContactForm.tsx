@@ -50,7 +50,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <section className="h-fit py-10 text-white sm:py-16 lg:py-24">
+      <section className="h-fit py-10 px-6 text-white sm:py-16 lg:py-24">
         <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
             <div className="flex flex-col justify-between lg:py-5">
@@ -167,14 +167,6 @@ const ContactForm = () => {
                   )}
                 </div>
               </div>
-              <button className="mt-6 w-full bg-white text-black p-1 rounded transition ease-in-out delay-150 md:hover:scale-110 duration-300">
-                <a
-                  href="tel:0756847346"
-                  className="font-semibold px-[3rem] md:px-[6.7rem]"
-                >
-                  Appelez-nous au 07 56 84 73 46
-                </a>
-              </button>
             </div>
           </div>
         </div>
