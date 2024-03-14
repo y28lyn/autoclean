@@ -101,3 +101,9 @@
   height: 80%;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
 }
+
+/* Selection */
+::selection {
+  background-color: #28cdf691;
+  color: #fff;
+}

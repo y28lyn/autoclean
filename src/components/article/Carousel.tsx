@@ -8,11 +8,11 @@ import "../../style.css";
 
 const slideImages = ["/car_1.jpg", "/car_2.jpg", "/car_3.jpg", "/car_4.jpg"];
 
-const AccueilCarousel = () => {
+const Carousel = () => {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex md:items-center md:justify-center px-4 py-10 bg-[#000302] sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
+      <div className="grid grid-cols-1 lg:grid-cols-2 text-center bg-[#000302]">
+        <div className="flex md:items-center md:justify-center px-4 py-10 sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto md:text-left">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
               Que faisons-nous ?
@@ -59,4 +59,4 @@ const AccueilCarousel = () => {
   );
 };
 
-export default AccueilCarousel;
+export default Carousel;

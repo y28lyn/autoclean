@@ -1,48 +1,84 @@
-const BannerArticle = () => {
-  // Définition des données d'images et de légendes
-  const images = [
-    {
-      src: "https://images.unsplash.com/photo-1639640163962-9e845bd7294a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Photo d'une voiture citadine",
-      caption: "Citadine",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1606611013016-969c19ba27bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Photot d'un SUV",
-      caption: "SUV",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1605410791216-3d9653a95667?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Photo d'un monospace",
-      caption: "Monospace",
-    },
-  ];
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
+import "../../style.css";
+
+interface ImageData {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+interface Props {
+  images: ImageData[];
+  title: string;
+}
+
+const BannerArticle: React.FC<Props> = ({ images, title }) => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 justify-center flex">
-      <div className="container px-4 md:px-6 text-center">
+    <>
+      <section className="hidden md:flex w-full py-12 justify-center">
+        <div className="container px-4 md:px-6 text-center">
+          <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            {title}
+          </h2>
+          <div className="grid grid-cols-3 p-6 md:p-0 gap-4 mt-8">
+            {images.map((image, index) => (
+              <div key={index}>
+                <img
+                  alt={image.alt}
+                  className="w-full h-64 object-cover rounded"
+                  src={image.src}
+                  style={{
+                    aspectRatio: "300/300",
+                    objectFit: "cover",
+                  }}
+                  width="300"
+                />
+                <p className="md:py-2 py-4 text-gray-200 font-bold">
+                  {image.caption}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col md:hidden text-center items-center justify-center bg-[#000302] px-10 pb-16">
         <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          Nos gammes de lavages
+          {title}
         </h2>
-        <div className="grid grid-cols-3 gap-4 mt-8">
-          {images.map((image, index) => (
-            <div key={index}>
+        <Swiper
+          modules={[Pagination, Navigation]}
+          className="text-base text-white w-full md:w-[80vw] h-auto bg-transparent rounded shadow-2xl mt-8"
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            bulletClass: "swiper-pagination-bullet", // Classe pour les bullets
+            bulletActiveClass: "swiper-pagination-bullet-active", // Classe pour le bullet actif
+          }}
+          navigation={true}
+        >
+          {images.map((imageSrc, index) => (
+            <SwiperSlide key={index} className="image-container">
               <img
-                alt={image.alt}
-                className="w-full h-64 object-cover rounded"
-                src={image.src}
+                src={imageSrc.src}
+                alt={imageSrc.alt}
+                className="h-full w-full object-cover"
                 style={{
                   aspectRatio: "300/300",
                   objectFit: "cover",
                 }}
                 width="300"
               />
-              <p className="mt-2 text-gray-200 font-bold">{image.caption}</p>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
-      </div>
-    </section>
+        </Swiper>
+      </section>
+    </>
   );
 };
 

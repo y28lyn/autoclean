@@ -26,19 +26,11 @@ const plans: Plan[] = [
         },
       },
       {
-        name: "Intérieur complet",
-        prices: {
-          citadine: "40€",
-          suv: "75€",
-          monospace: "30€",
-        },
-      },
-      {
-        name: "Nettoyage extérieur",
+        name: "Avec nettoyage extérieur",
         prices: {
           citadine: "45€",
-          suv: "80€",
-          monospace: "35€",
+          suv: "50€",
+          monospace: "60€",
         },
       },
     ],
@@ -53,34 +45,25 @@ const plans: Plan[] = [
     iconColor: "text-yellow-500",
     features: [
       {
-        name: "Intérieur standard",
-        prices: {
-          citadine: "35€",
-          suv: "65€",
-          monospace: "25€",
-        },
-      },
-      {
         name: "Intérieur complet",
         prices: {
           citadine: "40€",
-          suv: "75€",
-          monospace: "30€",
+          suv: "50€",
+          monospace: "60€",
         },
       },
       {
-        name: "Nettoyage extérieur",
+        name: "Avec nettoyage extérieur",
         prices: {
-          citadine: "45€",
-          suv: "80€",
-          monospace: "35€",
+          citadine: "50€",
+          suv: "60€",
+          monospace: "70€",
         },
       },
     ],
     description: [
-      "Aspirateur, plastiques, vitres intérieures",
-      "Standard + shampoing sièges, tapis, moquette",
-      "Carrosserie, jantes, vitres, pneus, intérieur des roues",
+      "Carrosserie, jantes, vitres, pneus",
+      "Complet + shampoing sièges, tapis, moquette",
     ],
   },
   {
@@ -89,14 +72,6 @@ const plans: Plan[] = [
     features: [
       {
         name: "Soin du cuir",
-        prices: {
-          citadine: "5€",
-          suv: "6€",
-          monospace: "8€",
-        },
-      },
-      {
-        name: "Cire pour carroserie",
         prices: {
           citadine: "5€",
           suv: "6€",
@@ -114,8 +89,7 @@ const plans: Plan[] = [
     ],
     description: [
       "Nettoyage et traitement spécial pour le cuir",
-      "Application de cire pour la carrosserie",
-      "Élimination des poils d'animaux et traitement anti-allergène",
+      "Élimination des poils d'animaux",
     ],
   },
 ];
@@ -126,7 +100,7 @@ const TarifList: React.FC = () => {
       <h2 className="text-center text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
         Nos tarifs
       </h2>
-      <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         {plans.map((plan, planIndex) => (
           <div
             key={planIndex}
@@ -137,9 +111,9 @@ const TarifList: React.FC = () => {
             <ul className="text-center mb-4">
               {plan.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="mt-6">
-                  <div className="h-[1px] bg-[#000302] my-6"></div>
-                  <div className="text-center">
-                    <p>{feature.name}</p>
+                  {/* <div className="h-[1px] bg-[#000302] my-6"></div> */}
+                  <div className="text-center font-semibold">
+                    <p className="underline">{feature.name}</p>
                     {plan.description && plan.description[featureIndex] && (
                       <p className="text-gray-600 text-center">
                         {plan.description[featureIndex]}

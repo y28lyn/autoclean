@@ -1,6 +1,6 @@
 import AccueilArticle from "../components/article/AccueilArticle";
 import AccueilAvis from "../components/article/AccueilAvis";
-import AccueilCarousel from "../components/article/AccueilCarousel";
+import Carousel from "../components/article/Carousel";
 import Banner from "../components/header/Banner";
 
 const Accueil = () => {
@@ -17,9 +17,9 @@ const Accueil = () => {
         />
       </header>
 
-      <main id="main">
+      <main id="main" className="bg-[#000302]">
         <AccueilArticle />
-        <AccueilCarousel />
+        <Carousel />
         <AccueilAvis />
       </main>
     </>
