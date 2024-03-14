@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -9,6 +10,22 @@ import "../../style.css";
 const slideImages = ["/car_1.jpg", "/car_2.jpg", "/car_3.jpg", "/car_4.jpg"];
 
 const Carousel = () => {
+  const [isPC, setIsPC] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPC(window.innerWidth > 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 text-center bg-[#000302]">
@@ -38,10 +55,10 @@ const Carousel = () => {
             pagination={{
               clickable: true,
               dynamicBullets: true,
-              bulletClass: "swiper-pagination-bullet", // Classe pour les bullets
-              bulletActiveClass: "swiper-pagination-bullet-active", // Classe pour le bullet actif
+              bulletClass: "swiper-pagination-bullet",
+              bulletActiveClass: "swiper-pagination-bullet-active",
             }}
-            navigation={true}
+            navigation={isPC}
           >
             {slideImages.map((imageSrc, index) => (
               <SwiperSlide key={index} className="image-container">

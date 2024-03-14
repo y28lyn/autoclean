@@ -64,7 +64,7 @@ const Vitrage = () => {
         <section className="flex flex-col justify-center items-center md:grid grid-cols-1 lg:grid-cols-2 gap-2 mb-8 pt-10">
           <div className="container xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto px-4 md:px-6 text-center md:mb-0 mb-6">
             <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Nos lavages de vitres
+              Nos lavages vitriers
             </h2>
             <div className="text-slate-200 mt-2">
               <p>
@@ -76,7 +76,7 @@ const Vitrage = () => {
             </div>
           </div>
           <ComparisonSlider
-            topImage="https://images.unsplash.com/photo-1516959235296-c129e4fb6d57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            topImage="https://images.unsplash.com/photo-1464519586905-a8c004d307cc?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             bottomImage="https://images.unsplash.com/photo-1536509814050-49f492a201b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
         </section>

@@ -85,12 +85,12 @@ const ContactForm = () => {
             </div>
 
             <div className="lg:pl-12">
-              <div className="overflow-hidden bg-white rounded-md">
+              <div className="overflow-hidden bg-[#101314] rounded-md">
                 <div className="p-6 sm:p-10">
-                  <h3 className="text-3xl font-semibold text-black">
+                  <h3 className="text-3xl font-semibold text-white">
                     Contactez nous !
                   </h3>
-                  <p className="mt-4 text-base text-gray-600">
+                  <p className="mt-4 text-base text-gray-6200">
                     Nous sommes ravis de vous accueillir et sommes prêts à
                     répondre à toutes vos questions ou commentaires.
                   </p>
@@ -104,7 +104,7 @@ const ContactForm = () => {
                   >
                     <div className="space-y-6">
                       <div>
-                        <label className="text-base font-medium text-gray-900">
+                        <label className="text-base font-medium text-gray-100">
                           Nom et prénom
                         </label>
                         <div className="mt-2.5 relative">
@@ -119,7 +119,7 @@ const ContactForm = () => {
                       </div>
 
                       <div>
-                        <label className="text-base font-medium text-gray-900">
+                        <label className="text-base font-medium text-gray-100">
                           Email
                         </label>
                         <div className="mt-2.5 relative">
@@ -134,7 +134,7 @@ const ContactForm = () => {
                       </div>
 
                       <div>
-                        <label className="text-base font-medium text-gray-900">
+                        <label className="text-base font-medium text-gray-100">
                           Message
                         </label>
                         <div className="mt-2.5 relative">
@@ -150,7 +150,7 @@ const ContactForm = () => {
                       <div>
                         <button
                           type="submit"
-                          className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-autoclean_blue border border-transparent rounded-md focus:outline-none hover:bg-[#1c7ca8] focus:bg-[#1c7ca8]"
+                          className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-700 border border-transparent rounded-md focus:outline-none hover:bg-blue-600 focus:bg-blue-600"
                         >
                           Envoyez votre message
                         </button>

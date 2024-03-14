@@ -137,18 +137,12 @@ const Automobile = () => {
   const exemples = [
     {
       src: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Photo d'une voiture citadine",
-      caption: "D'une citadine",
     },
     {
       src: "https://images.unsplash.com/photo-1615063029891-497bebd4f03c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Photot d'un SUV",
-      caption: "D'un SUV",
     },
     {
       src: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Photo d'un monospace",
-      caption: "D'une monospace",
     },
   ];
 

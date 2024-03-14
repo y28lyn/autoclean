@@ -33,7 +33,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
         {plans.map((plan, planIndex) => (
           <div
             key={planIndex}
-            className="flex flex-col items-center bg-white shadow-md rounded p-6 w-auto md:w-1/2"
+            className="flex flex-col items-center bg-[#101314] text-white shadow-md rounded p-6 w-auto md:w-1/2"
           >
             <DollarSignIcon className={`w-12 h-12 ${plan.iconColor} mb-4`} />
             <h2 className="text-2xl font-bold mb-2">{plan.title}</h2>
@@ -43,7 +43,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
                   <div className="text-center font-semibold">
                     <p className="underline">{feature.name}</p>
                     {plan.description && plan.description[featureIndex] && (
-                      <p className="text-gray-600 text-center">
+                      <p className="text-gray-200 text-center">
                         {plan.description[featureIndex]}
                       </p>
                     )}

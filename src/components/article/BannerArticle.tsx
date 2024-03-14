@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import "../../style.css";
 
@@ -52,7 +51,7 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
           {title}
         </h2>
         <Swiper
-          modules={[Pagination, Navigation]}
+          modules={[Pagination]}
           className="text-base text-white w-full md:w-[80vw] h-auto bg-transparent rounded shadow-2xl mt-8"
           pagination={{
             clickable: true,
@@ -60,7 +59,6 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
             bulletClass: "swiper-pagination-bullet", // Classe pour les bullets
             bulletActiveClass: "swiper-pagination-bullet-active", // Classe pour le bullet actif
           }}
-          navigation={true}
         >
           {images.map((imageSrc, index) => (
             <SwiperSlide key={index} className="image-container">
