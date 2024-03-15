@@ -3,7 +3,10 @@ import ContactForm from "../components/article/ContactForm";
 const Contact = () => {
   return (
     <>
-      <main id="main" className="bg-[#000302] text-white pt-10">
+      <main
+        id="main"
+        className="dark:bg-[#000302] bg-white dark:text-white text-[#101314] pt-10"
+      >
         <ContactForm />
       </main>
     </>

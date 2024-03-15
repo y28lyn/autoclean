@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <section className="pb-10 pt-1 bg-[#000302]">
-        <div className="w-[95%] md:w-[98%] bg-white h-[1px] px-2 mx-auto"></div>
+      <section className="pb-10 pt-1 dark:bg-[#000302] bg-white">
+        <div className="w-[95%] md:w-[98%] dark:bg-white bg-[#000302] h-[1px] px-2 mx-auto"></div>
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
           <div className="md:pt-10 pt-6">
             <div className="lg:flex lg:items-center lg:justify-between">
@@ -13,7 +13,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/politique_confidentialite"
-                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-500"
+                      className="text-[12px] md:text-sm dark:text-white text-[#101314] transition-all duration-200 hover:text-blue-500"
                     >
                       Politique de confidentialité
                     </Link>
@@ -21,7 +21,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/mention_legales"
-                      className="text-[12px] md:text-sm text-white transition-all duration-200 hover:text-blue-500"
+                      className="text-[12px] md:text-sm dark:text-white text-[#101314] transition-all duration-200 hover:text-blue-500"
                     >
                       Mentions légales
                     </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <a
                       href="https://www.instagram.com/autoclean.lyon/"
                       target="blank"
-                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-500"
+                      className="flex flex-row gap-x-1 dark:text-white text-[#101314] transition-all duration-200 hover:text-blue-500"
                     >
                       <svg
                         className="w-5 h-5 md:w-6 md:h-6"
@@ -48,7 +48,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="flex flex-row gap-x-1 text-white transition-all duration-200 hover:text-blue-500"
+                      className="flex flex-row gap-x-1 dark:text-white text-[#101314] transition-all duration-200 hover:text-blue-500"
                       href="https://www.facebook.com/profile.php?id=61552207017452"
                       target="blank"
                     >
@@ -73,7 +73,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <p className="mt-6 text-sm text-white md:text-base text-center lg:mt-0">
+              <p className="mt-6 text-sm dark:text-white text-[#101314] md:text-base text-center lg:mt-0">
                 © 2024 Autoclean
               </p>
             </div>

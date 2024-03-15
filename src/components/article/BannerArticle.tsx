@@ -21,7 +21,7 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
     <>
       <section className="hidden md:flex w-full py-12 justify-center">
         <div className="container px-4 md:px-6 text-center">
-          <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl dark:text-white text-[#101314] font-bold tracking-tighter sm:text-4xl md:text-5xl">
             {title}
           </h2>
           <div className="grid grid-cols-3 p-6 md:p-0 gap-4 mt-8">
@@ -37,7 +37,7 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
                   }}
                   width="300"
                 />
-                <p className="md:py-2 py-4 text-gray-200 font-bold">
+                <p className="md:py-2 py-4 dark:text-gray-200 text-slate-800 font-bold">
                   {image.caption}
                 </p>
               </div>
@@ -46,13 +46,13 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
         </div>
       </section>
 
-      <section className="flex flex-col md:hidden text-left items-center justify-center bg-[#000302] px-10 pb-16">
-        <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
+      <section className="flex flex-col md:hidden text-center items-center justify-center px-10 pb-16">
+        <h2 className="text-3xl dark:text-white text-[#101314] font-bold tracking-tighter sm:text-4xl md:text-5xl">
           {title}
         </h2>
         <Swiper
           modules={[Pagination]}
-          className="text-base text-white w-full md:w-[80vw] h-auto bg-transparent rounded shadow-2xl mt-8"
+          className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto bg-transparent rounded shadow-2xl mt-8"
           pagination={{
             clickable: true,
             dynamicBullets: true,

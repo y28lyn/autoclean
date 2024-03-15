@@ -28,16 +28,16 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 text-left bg-[#000302]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 text-left">
         <div className="flex md:items-center md:justify-center px-4 py-10 sm:px-6 lg:px-8 sm:py-16 lg:py-24 md:min-h-screen overflow-hidden relative">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto md:text-left">
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold leading-tight dark:text-white text-[#101314] sm:text-4xl">
               Que faisons-nous ?
             </h2>
-            <p className="mt-2 text-base text-white">
+            <p className="mt-2 text-base dark:text-white text-[#101314]">
               Voici quelques résultats de nos lavages
             </p>
-            <div className="text-slate-200 mt-2">
+            <div className="dark:text-slate-200 text-slate-800 mt-2">
               <p>
                 Chez Autoclean, nous vous offrons un lavage minutieux pour
                 automobiles, vitres et canapés, avec l'utilisation de techniques
@@ -48,10 +48,10 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex items-center justify-center bg-[#000302] px-10 pb-16">
+        <div className="relative flex items-center justify-center p-10">
           <Swiper
             modules={[Pagination, Navigation]}
-            className="text-base text-white w-full md:w-[80vw] h-auto md:h-[80vh] bg-transparent rounded shadow-2xl"
+            className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto md:h-[80vh] bg-transparent rounded shadow-2xl"
             pagination={{
               clickable: true,
               dynamicBullets: true,

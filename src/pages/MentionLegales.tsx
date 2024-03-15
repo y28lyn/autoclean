@@ -1,7 +1,7 @@
 const MentionLegales = () => {
   return (
     <>
-      <div className="bg-[#000302] text-white pb-10 pt-20 px-10 md:p-28">
+      <div className="dark:bg-[#000302] bg-white dark:text-white text-[#101314] pb-10 pt-20 px-10 md:p-28">
         <h1 className="text-3xl font-bold">Mentions Légales d'Autoclean</h1>
         <p className="text-sm">
           <strong>Date de la Dernière Mise à Jour :</strong> 03/10/2023

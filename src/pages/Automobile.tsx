@@ -159,13 +159,13 @@ const Automobile = () => {
         />
       </header>
 
-      <main id="main" className="bg-[#000302]">
+      <main id="main" className="dark:bg-[#000302] bg-white">
         <section className="flex flex-col justify-center items-center md:grid grid-cols-1 lg:grid-cols-2 gap-2 mb-8 pt-10">
           <div className="container xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto px-10 md:px-6 text-left md:mb-0 mb-6">
-            <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl dark:text-white text-[#101314] font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Nos lavages automobiles
             </h2>
-            <div className="text-slate-200 mt-2">
+            <div className="dark:text-gray-200 text-slate-800 mt-2">
               <p>
                 Pour seulement 25€, offrez à votre voiture une propreté
                 impeccable avec Autoclean. Nos techniques de pointe et nos

@@ -1,11 +1,11 @@
 const AccueilAvis = () => {
   return (
     <>
-      <section className="py-10 bg-[#000302] text-white sm:py-16 lg:py-24">
+      <section className="py-10 dark:text-white text-[#101314] sm:py-16 lg:py-24">
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
           <div className="text-left md:text-center">
             <h2 className="text-3xl font-semibold">
-              <span className="border-b-4 border-blue-700">
+              <span className="border-b-4 dark:border-blue-700 border-blue-500">
                 Des clients du lavage Autoclean, venant de tous horizons, nous
                 ont fait confiance, consolidant notre réputation.
               </span>

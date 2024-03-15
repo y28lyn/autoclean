@@ -17,7 +17,7 @@ const Accueil = () => {
         />
       </header>
 
-      <main id="main" className="bg-[#000302]">
+      <main id="main" className="dark:bg-[#000302] bg-white">
         <AccueilArticle />
         <Carousel />
         <AccueilAvis />

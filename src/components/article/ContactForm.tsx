@@ -50,34 +50,34 @@ const ContactForm = () => {
 
   return (
     <>
-      <section className="h-fit py-10 px-6 text-white sm:py-16 lg:py-24">
+      <section className="h-fit py-10 px-6 dark:text-white text-[#101314] sm:py-16 lg:py-24">
         <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
             <div className="flex flex-col justify-between lg:py-5">
               <div>
-                <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl">
+                <h2 className="text-3xl font-bold leading-tight dark:text-white text-[#101314] sm:text-4xl lg:leading-tight lg:text-5xl">
                   Il est temps de laver votre voiture ?
                 </h2>
-                <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
+                <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed dark:text-white text-[#101314]">
                   Chez Autoclean, l'excellence est notre norme. Faites-nous
                   confiance pour redonner à votre voiture son éclat d'origine,
                   car chez Autoclean, la qualité prime toujours.
                 </p>
 
-                <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
+                <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed dark:text-white text-[#101314]">
                   Pour réserver veuillez nous contacter par téléphone (07 56 84
                   73 46), par instagram/facebook (autoclean.lyon) ou par le
                   formulaire de contact !
                 </p>
 
                 <img
-                  className="relative z-10 max-w-xs mx-auto -mb-16 md:hidden"
+                  className="relative z-10 max-w-xs mx-auto -mb-16 md:hidden dark:brightness-200 brightness-50"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line-mobile.svg"
                   alt=""
                 />
 
                 <img
-                  className="hidden w-full translate-x-24 translate-y-8 md:block"
+                  className="hidden w-full translate-x-24 translate-y-8 md:block dark:brightness-200 brightness-50"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line.svg"
                   alt=""
                 />
@@ -85,9 +85,9 @@ const ContactForm = () => {
             </div>
 
             <div className="lg:pl-12">
-              <div className="overflow-hidden bg-[#101314] rounded-md">
+              <div className="overflow-hidden dark:bg-[#101314] bg-[#FFF7F1] rounded-md">
                 <div className="p-6 sm:p-10">
-                  <h3 className="text-3xl font-semibold text-white">
+                  <h3 className="text-3xl font-semibold dark:text-white text-[#101314]">
                     Contactez nous !
                   </h3>
                   <p className="mt-4 text-base text-gray-6200">
@@ -104,7 +104,7 @@ const ContactForm = () => {
                   >
                     <div className="space-y-6">
                       <div>
-                        <label className="text-base font-medium text-gray-100">
+                        <label className="text-base font-medium dark:text-gray-100 text-slate-700">
                           Nom et prénom
                         </label>
                         <div className="mt-2.5 relative">
@@ -119,7 +119,7 @@ const ContactForm = () => {
                       </div>
 
                       <div>
-                        <label className="text-base font-medium text-gray-100">
+                        <label className="text-base font-medium dark:text-gray-100 text-slate-700">
                           Email
                         </label>
                         <div className="mt-2.5 relative">
@@ -134,7 +134,7 @@ const ContactForm = () => {
                       </div>
 
                       <div>
-                        <label className="text-base font-medium text-gray-100">
+                        <label className="text-base font-medium dark:text-gray-100 text-slate-700">
                           Message
                         </label>
                         <div className="mt-2.5 relative">
@@ -150,7 +150,7 @@ const ContactForm = () => {
                       <div>
                         <button
                           type="submit"
-                          className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-700 border border-transparent rounded-md focus:outline-none hover:bg-blue-600 focus:bg-blue-600"
+                          className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 dark:bg-blue-700 bg-blue-400 border border-transparent rounded-md focus:outline-none dark:hover:bg-blue-800 hover:bg-blue-500 dark:focus:bg-blue-800 focus:bg-blue-500"
                         >
                           Envoyez votre message
                         </button>

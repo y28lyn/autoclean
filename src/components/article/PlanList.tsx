@@ -32,7 +32,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
   return (
     <>
       <div className="px-10 md:px-0">
-        <h2 className="text-left md:text-center text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
+        <h2 className="text-center text-3xl dark:text-white text-[#101314] font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Nos tarifs
         </h2>
       </div>
@@ -41,7 +41,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
       <div className="md:hidden flex items-center justify-center p-8">
         <Swiper
           modules={[Pagination]}
-          className="text-base text-white bg-transparent rounded shadow-2xl h-full"
+          className="text-base dark:text-white text-[#101314] bg-transparent rounded shadow-2xl h-full"
           pagination={{
             clickable: true,
             dynamicBullets: true,
@@ -53,7 +53,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
             <SwiperSlide key={planIndex}>
               <div
                 key={planIndex}
-                className="flex flex-col items-center justify-center bg-[#101314] text-white shadow-md rounded w-auto h-[60vh] p-6 md:w-1/2"
+                className="flex flex-col items-center justify-center dark:bg-[#101314] bg-[#FFF7F1] dark:text-white text-[#101314] shadow-md rounded w-auto h-[60vh] p-6 md:w-1/2"
               >
                 <DollarSignIcon
                   className={`w-12 h-12 ${plan.iconColor} mb-4`}
@@ -65,7 +65,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
                       <div className="text-center font-semibold">
                         <p className="underline">{feature.name}</p>
                         {plan.description && plan.description[featureIndex] && (
-                          <p className="text-gray-200 text-center">
+                          <p className="dark:text-gray-200 text-slate-800 text-center">
                             {plan.description[featureIndex]}
                           </p>
                         )}
@@ -104,7 +104,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
         {plans.map((plan, planIndex) => (
           <div
             key={planIndex}
-            className="flex flex-col items-center bg-[#101314] text-white shadow-md rounded p-6 w-auto md:w-1/2"
+            className="flex flex-col items-center dark:bg-[#101314] bg-[#FFF7F1] dark:text-white text-[#101314]  shadow-md rounded p-6 w-auto md:w-1/2"
           >
             <DollarSignIcon className={`w-12 h-12 ${plan.iconColor} mb-4`} />
             <h2 className="text-2xl font-bold mb-2">{plan.title}</h2>
@@ -114,7 +114,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
                   <div className="text-center font-semibold">
                     <p className="underline">{feature.name}</p>
                     {plan.description && plan.description[featureIndex] && (
-                      <p className="text-gray-200 text-center">
+                      <p className="dark:text-gray-200 text-slate-800 text-center">
                         {plan.description[featureIndex]}
                       </p>
                     )}
