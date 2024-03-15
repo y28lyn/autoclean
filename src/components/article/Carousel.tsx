@@ -51,7 +51,7 @@ const Carousel = () => {
         <div className="relative flex items-center justify-center p-10">
           <Swiper
             modules={[Pagination, Navigation]}
-            className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto md:h-[80vh] bg-transparent rounded shadow-2xl"
+            className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto md:h-[80vh] bg-transparent rounded shadow"
             pagination={{
               clickable: true,
               dynamicBullets: true,

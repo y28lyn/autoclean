@@ -100,7 +100,7 @@ const ComparisonSlider = ({ topImage, bottomImage }: ImageProps) => {
   }, [isResizing, handleResize, handleResizeEnd]);
 
   return (
-    <div className="md:ml-10 md:max-w-md h-64 md:h-[50vh] relative overflow-hidden rounded shadow-2xl">
+    <div className="md:ml-10 md:max-w-md h-64 md:h-[50vh] relative overflow-hidden rounded shadow">
       <div
         ref={handleRef}
         className="absolute w-1 h-full bg-gray-200 z-30 cursor-col-resize top-0"
@@ -132,7 +132,7 @@ const ComparisonSlider = ({ topImage, bottomImage }: ImageProps) => {
           draggable={false}
           src={topImage}
           alt=""
-          className="object-cover w-64 h-64 md:w-full md:h-[80vh] select-none pointer-events-none"
+          className="object-cover w-80 h-64 md:w-full md:h-[80vh] select-none pointer-events-none"
         />
       </div>
       <div className="overflow-hidden">
@@ -140,7 +140,7 @@ const ComparisonSlider = ({ topImage, bottomImage }: ImageProps) => {
           draggable={false}
           src={bottomImage}
           alt=""
-          className="object-cover w-64 h-64 md:w-full md:h-[80vh] select-none pointer-events-none"
+          className="object-cover w-80 h-64 md:w-full md:h-[80vh] select-none pointer-events-none"
         />
       </div>
     </div>

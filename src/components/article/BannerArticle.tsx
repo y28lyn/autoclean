@@ -52,7 +52,7 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
         </h2>
         <Swiper
           modules={[Pagination]}
-          className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto bg-transparent rounded shadow-2xl mt-8"
+          className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto bg-transparent rounded shadow mt-8"
           pagination={{
             clickable: true,
             dynamicBullets: true,

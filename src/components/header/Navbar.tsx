@@ -165,7 +165,7 @@ const Navbar: React.FC = () => {
               className="absolute bottom-0 left-0 top-16 w-full h-screen bg-[#000302] bg-opacity-80 backdrop-blur-lg p-4 z-50"
               id="navbar-sticky"
             >
-              <ul className="flex flex-col font-medium bg-transpaent text-white rounded shadow-sm">
+              <ul className="flex flex-col font-medium bg-transpaent text-white rounded shadow">
                 <li>
                   <Link
                     to="/"
