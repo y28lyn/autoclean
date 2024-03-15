@@ -85,7 +85,7 @@ const ContactForm = () => {
             </div>
 
             <div className="lg:pl-12">
-              <div className="overflow-hidden dark:bg-[#101314] bg-[#FFF7F1] rounded-md">
+              <div className="overflow-hidden dark:bg-[#101314] bg-[#F3F8FF] rounded-md">
                 <div className="p-6 sm:p-10">
                   <h3 className="text-3xl font-semibold dark:text-white text-[#101314]">
                     Contactez nous !

@@ -53,7 +53,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
             <SwiperSlide key={planIndex}>
               <div
                 key={planIndex}
-                className="flex flex-col items-center justify-center dark:bg-[#101314] bg-[#FFF7F1] dark:text-white text-[#101314] shadow-md rounded w-auto h-[60vh] p-6 md:w-1/2"
+                className="flex flex-col items-center justify-center dark:bg-[#101314] bg-[#F3F8FF] dark:text-white text-[#101314] shadow-md rounded w-auto h-[60vh] p-6 md:w-1/2"
               >
                 <DollarSignIcon
                   className={`w-12 h-12 ${plan.iconColor} mb-4`}
@@ -104,7 +104,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
         {plans.map((plan, planIndex) => (
           <div
             key={planIndex}
-            className="flex flex-col items-center dark:bg-[#101314] bg-[#FFF7F1] dark:text-white text-[#101314]  shadow-md rounded p-6 w-auto md:w-1/2"
+            className="flex flex-col items-center dark:bg-[#101314] bg-[#F3F8FF] dark:text-white text-[#101314]  shadow-md rounded p-6 w-auto md:w-1/2"
           >
             <DollarSignIcon className={`w-12 h-12 ${plan.iconColor} mb-4`} />
             <h2 className="text-2xl font-bold mb-2">{plan.title}</h2>
