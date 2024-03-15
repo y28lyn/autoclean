@@ -31,9 +31,11 @@ interface PlanListProps {
 const PlanList: React.FC<PlanListProps> = ({ plans }) => {
   return (
     <>
-      <h2 className="text-center text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
-        Nos tarifs
-      </h2>
+      <div className="px-10 md:px-0">
+        <h2 className="text-left md:text-center text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          Nos tarifs
+        </h2>
+      </div>
 
       {/* Mobile */}
       <div className="md:hidden flex items-center justify-center p-8">

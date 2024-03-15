@@ -46,7 +46,7 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
         </div>
       </section>
 
-      <section className="flex flex-col md:hidden text-center items-center justify-center bg-[#000302] px-10 pb-16">
+      <section className="flex flex-col md:hidden text-left items-center justify-center bg-[#000302] px-10 pb-16">
         <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl">
           {title}
         </h2>

@@ -5,7 +5,6 @@ import { StrictMode } from "react";
 import Root from "./routes/root";
 import ErrorPage from "./pages/Error";
 import Accueil from "./pages/Accueil";
-import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import MentionLegales from "./pages/MentionLegales";
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Accueil />,
-      },
-      {
-        path: "/tarifs",
-        element: <Tarifs />,
       },
       {
         path: "/automobile",
