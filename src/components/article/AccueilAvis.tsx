@@ -3,7 +3,7 @@ const AccueilAvis = () => {
     <>
       <section className="py-10 bg-[#000302] text-white sm:py-16 lg:py-24">
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-left md:text-center">
             <h2 className="text-3xl font-semibold">
               <span className="border-b-4 border-blue-700">
                 Des clients du lavage Autoclean, venant de tous horizons, nous
