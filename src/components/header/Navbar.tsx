@@ -205,7 +205,7 @@ const Navbar: React.FC = () => {
                     Contact
                   </Link>
                 </li>
-                <span className="w-[98%] bg-white h-[1px] px-2 mx-auto"></span>
+                <span className="w-[98%] bg-white h-[1px] px-2 my-3 mx-auto"></span>
                 <li>
                   <p className="block py-2 pl-3 pr-4">07 56 84 73 46</p>
                 </li>

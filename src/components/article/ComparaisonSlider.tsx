@@ -103,15 +103,15 @@ const ComparisonSlider = ({ topImage, bottomImage }: ImageProps) => {
     <div className="md:ml-10 md:max-w-md h-64 md:h-[80vh] relative overflow-hidden rounded shadow-2xl">
       <div
         ref={handleRef}
-        className="absolute w-1 h-full bg-[#101314] z-30 cursor-col-resize top-0"
+        className="absolute w-1 h-full bg-gray-200 z-30 cursor-col-resize top-0"
         onMouseDown={() => setIsResizing(true)}
         onTouchStart={() => setIsResizing(true)}
       >
         <svg
-          viewBox="0 0 50.8 50.8"
+          fill="#101314"
+          viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
-          fill="#fff"
-          className="block absolute top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2 h-8 w-8 bg-[#101314] rounded-lg p-1"
+          className="block absolute top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2 h-8 w-8 bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 duration-200 ease-in-out rounded-lg p-1"
         >
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g
@@ -120,14 +120,7 @@ const ComparisonSlider = ({ topImage, bottomImage }: ImageProps) => {
             stroke-linejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
-            <path
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="3.175"
-              d="M22.952 10.715H10.715v29.369h12.237m0-34.264v39.16m-12.237-7.344L22.952 25.4m7.342 14.684h9.79V10.715h-9.79m0 17.132 9.79 12.237"
-            ></path>
+            <path d="M1,8A1,1,0,0,1,2,7H9.586L7.293,4.707A1,1,0,1,1,8.707,3.293l4,4a1,1,0,0,1,0,1.414l-4,4a1,1,0,1,1-1.414-1.414L9.586,9H2A1,1,0,0,1,1,8Zm21,7H14.414l2.293-2.293a1,1,0,0,0-1.414-1.414l-4,4a1,1,0,0,0,0,1.414l4,4a1,1,0,0,0,1.414-1.414L14.414,17H22a1,1,0,0,0,0-2Z"></path>
           </g>
         </svg>
       </div>

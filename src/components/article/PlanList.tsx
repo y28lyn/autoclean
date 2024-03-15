@@ -36,10 +36,10 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
       </h2>
 
       {/* Mobile */}
-      <div className="relative md:hidden flex items-center justify-center bg-[#000302] p-8">
+      <div className="md:hidden flex items-center justify-center p-8">
         <Swiper
           modules={[Pagination]}
-          className="text-base text-white w-full h-auto bg-transparent rounded shadow-2xl"
+          className="text-base text-white bg-transparent rounded shadow-2xl h-full"
           pagination={{
             clickable: true,
             dynamicBullets: true,
@@ -51,13 +51,13 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
             <SwiperSlide key={planIndex}>
               <div
                 key={planIndex}
-                className="flex flex-col items-center bg-[#101314] text-white shadow-md rounded p-8 w-auto md:w-1/2"
+                className="flex flex-col items-center justify-center bg-[#101314] text-white shadow-md rounded w-auto h-[60vh] p-6 md:w-1/2"
               >
                 <DollarSignIcon
                   className={`w-12 h-12 ${plan.iconColor} mb-4`}
                 />
                 <h2 className="text-2xl font-bold mb-2">{plan.title}</h2>
-                <ul className="text-center mb-4">
+                <ul className="text-center mb-6">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="mt-6">
                       <div className="text-center font-semibold">
