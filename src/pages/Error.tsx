@@ -21,9 +21,9 @@ export default function ErrorPage() {
             d="M6 18L18 6M6 6l12 12"
           />
         </svg>
-        <h1 className="text-red-500 font-extrabold text-3xl">ERROR 404</h1>
+        <h1 className="text-red-500 font-extrabold text-3xl">ERREUR 404</h1>
       </div>
-      <h2 className="text-4xl mb-2 px-6 text-center">Oops! Page introuvable</h2>
+      <h2 className="text-4xl mb-2 px-6 text-center">Page introuvable</h2>
       <p className="text-lg mb-4 px-6 text-center">
         Désolé, la page que vous recherchez n'existe pas.
       </p>

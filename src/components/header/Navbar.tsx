@@ -5,51 +5,46 @@ import Switcher from "../article/Switcher";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isNavbarBlack, setIsNavbarBlack] = useState(false);
+  const [blurNavbar, setBlurNavbar] = useState(false);
   const location = useLocation();
+
+  // Chemins où le flou est toujours activé
+  const shouldBlurNavbar = [
+    "/contact",
+    "/mention_legales",
+    "/politique_confidentialite",
+  ].includes(location.pathname);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Définit blurNavbar true si le défilement est supérieur à 50px
+      setBlurNavbar(window.scrollY > 50);
+    };
+
+    // Ajout d'un écouteur d'événements de défilement lorsque le composant est monté
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyage de l'écouteur d'événement lorsque le composant est démonté
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // Ferme le menu mobile et supprime le cache en cas de changement de chemin d'accès
+    setMenuOpen(false);
+    document.body.classList.remove("overflow-hidden");
+  }, [location]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    // Ajouter ou supprimer la classe 'overflow-hidden' lorsque le menu est ouvert ou fermé
-    if (!menuOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+    document.body.classList.toggle("overflow-hidden");
   };
-
-  // Fermer le menu et rétablir le défilement lorsque l'emplacement change
-  useEffect(() => {
-    setMenuOpen(false); // Fermer le menu lorsque la page change
-    document.body.classList.remove("overflow-hidden"); // Rétablir le défilement
-  }, [location]);
-
-  useEffect(() => {
-    // Ajoutez une classe CSS pour le fond noir lorsque vous descendez de 50 pixels
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsNavbarBlack(true);
-      } else {
-        setIsNavbarBlack(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <nav
       className={`fixed w-full z-50 top-0 left-0 text-white transition ease-in-out duration-300 ${
-        isNavbarBlack
-          ? menuOpen
-            ? "" // Si le menu est ouvert, ne pas appliquer de flou
-            : "bg-[#000302] bg-opacity-50 backdrop-blur-lg" // Appliquer le flou si le menu est fermé
-          : "bg-transparent"
+        shouldBlurNavbar || blurNavbar
+          ? "bg-[#000302] bg-opacity-50 backdrop-blur-lg"
+          : ""
       }`}
     >
       <div
@@ -70,8 +65,6 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="flex gap-2 md:order-2">
-          <p className="text-white md:block hidden">07 56 84 73 46</p>
-          <span className="ml-2 bg-white my-auto rounded-2xl w-1 h-1 hidden md:block"></span>
           <div className="p-2 md:p-0">
             <Switcher />
           </div>
@@ -210,6 +203,9 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <span className="w-[98%] bg-white h-[1px] px-2 my-3 mx-auto"></span>
+                <li>
+                  <Switcher />
+                </li>
                 <li>
                   <p className="block py-2 pl-3 pr-4">07 56 84 73 46</p>
                 </li>
