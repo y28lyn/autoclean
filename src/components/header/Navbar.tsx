@@ -72,7 +72,9 @@ const Navbar: React.FC = () => {
         <div className="flex gap-2 md:order-2">
           <p className="text-white md:block hidden">07 56 84 73 46</p>
           <span className="ml-2 bg-white my-auto rounded-2xl w-1 h-1 hidden md:block"></span>
-          <Switcher />
+          <div className="p-2 md:p-0">
+            <Switcher />
+          </div>
           <a
             className="text-white ml-2 md:block hidden"
             href="https://www.instagram.com/autoclean.lyon/"
@@ -208,9 +210,6 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <span className="w-[98%] bg-white h-[1px] px-2 my-3 mx-auto"></span>
-                <li>
-                  <Switcher />
-                </li>
                 <li>
                   <p className="block py-2 pl-3 pr-4">07 56 84 73 46</p>
                 </li>
