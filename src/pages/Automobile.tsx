@@ -139,10 +139,28 @@ const Automobile = () => {
       src: "/Q8.png",
     },
     {
-      src: "https://images.unsplash.com/photo-1615063029891-497bebd4f03c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/GLE2.png",
     },
     {
-      src: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/Mazdaxm-5.png",
+    },
+      {
+      src: "/GLE.png",
+    },
+      {
+      src: "/Passat break.png",
+    },
+      {
+      src: "/Tiguan.png",
+    },
+      {
+      src: "/tesla.png",
+    },
+      {
+      src: "/kia.png",
+    },
+      {
+      src: "/utilitairee.png",
     },
   ];
 
