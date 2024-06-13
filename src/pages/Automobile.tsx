@@ -167,9 +167,11 @@ const Automobile = () => {
             </h2>
             <div className="dark:text-gray-200 text-slate-800 mt-2">
               <p>
-                Pour seulement 25€, offrez à votre voiture une propreté
-                impeccable avec Autoclean. Nos techniques de pointe et nos
-                produits écologiques garantissent un résultat optimal.
+               Plongez dans une expérience de lavage automobile de qualité supérieure avec  Autoclean. 
+               Notre service de nettoyage de voiture à domicile vous offre la commodité de retrouver votre véhicule impeccable sans quitter votre domicile. 
+               De l'extérieur étincelant au nettoyage intérieur méticuleux, notre équipe de professionnels dévoués, équipée de shampouineuses de pointe, garantit une propreté sans pareille.
+               Nous allons au-delà du simple nettoyage pour éliminer les mauvaises odeurs, assurant une atmosphère agréable dans votre voiture.
+               Réservez dès maintenant pour redonner à votre véhicule son éclat d'origine et une fraîcheur revitalisante.
               </p>
             </div>
           </div>
