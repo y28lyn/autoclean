@@ -92,7 +92,7 @@ const Textile = () => {
           </div>
           <ComparisonSlider
             topImage="/tissus.png"
-            bottomImage="/tissut2.png"
+            bottomImage="/123.png"
           />
         </section>
         <PlanList plans={plans} />
