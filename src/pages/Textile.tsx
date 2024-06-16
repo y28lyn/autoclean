@@ -76,8 +76,8 @@ const Textile = () => {
             </div>
           </div>
           <ComparisonSlider
-            topImage="https://images.unsplash.com/photo-1565873741541-59207da8b88d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            bottomImage="https://images.unsplash.com/photo-1484101403633-562f891dc89a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            topImage="/tissus.png"
+            bottomImage="/tissus2.png"
           />
         </section>
         <PlanList plans={plans} />
