@@ -6,18 +6,18 @@ import Banner from "../components/header/Banner";
 const Textile = () => {
   const plans = [
     {
-      title: "Nettoyage simple",
+      title: "Nettoyage canapé ",
       iconColor: "text-green-500",
       features: [
         {
-          name: "Nettoyage standard",
+          name: " ",
           subname: {},
           prices: {
             second: "50€",
           },
         },
       ],
-      description: ["4 places ou moins"],
+      description: ["canapé 2 - 3 places"],
     },
     {
       title: "Nettoyage complet",
@@ -31,7 +31,22 @@ const Textile = () => {
           },
         },
       ],
-      description: ["5 places ou plus"],
+      description: ["canapé en L"],
+    },
+    
+    {
+      title: "Nettoyage complet",
+      iconColor: "text-yellow-500",
+      features: [
+        {
+          name: "Nettoyage complet",
+          subname: {},
+          prices: {
+            second: "60€",
+          },
+        },
+      ],
+      description: ["canapé en L"],
     },
   ];
 
