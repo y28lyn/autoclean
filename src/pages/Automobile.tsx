@@ -178,11 +178,10 @@ const Automobile = () => {
             </h2>
             <div className="dark:text-gray-200 text-slate-800 mt-2">
               <p>
-               Plongez dans une expérience de lavage automobile de qualité supérieure avec  Autoclean. 
-               Notre service de nettoyage de voiture à domicile vous offre la commodité de retrouver votre véhicule impeccable sans quitter votre domicile. 
-               De l'extérieur étincelant au nettoyage intérieur méticuleux, notre équipe de professionnels dévoués, équipée de shampouineuses de pointe, garantit une propreté sans pareille.
-               Nous allons au-delà du simple nettoyage pour éliminer les mauvaises odeurs, assurant une atmosphère agréable dans votre voiture.
-               Réservez dès maintenant pour redonner à votre véhicule son éclat d'origine et une fraîcheur revitalisante.
+               Découvrez le lavage automobile supérieur avec Autoclean. 
+                Notre service à domicile vous offre un véhicule impeccable sans bouger.
+                De l'extérieur étincelant au nettoyage intérieur, notre équipe dévouée et équipée garantit une propreté incomparable et élimine les mauvaises odeurs. 
+                Réservez maintenant pour redonner à votre voiture son éclat d'origine.
               </p>
             </div>
           </div>
