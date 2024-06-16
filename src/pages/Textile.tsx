@@ -68,11 +68,10 @@ const Textile = () => {
             </h2>
             <div className="dark:text-gray-200 text-slate-800 mt-2">
               <p>
-                Pour seulement 50€, redonnez à votre canapé tout son éclat
-                d'origine avec Autoclean. Nos spécialistes du nettoyage de
-                textile sont équipés des dernières techniques et utilisent des
-                produits doux pour garantir un résultat impeccable tout en
-                préservant la qualité de votre précieux canapé.
+               Redonnez vie à vos meubles avec notre service de nettoyage à domicile pour canapés et sièges en tissu.
+                Grâce à notre shampouineuse, nous éliminons en douceur les taches tout en préservant la texture des tissus.
+                Notre équipe dédiée assure un traitement minutieux pour une fraîcheur durable. 
+                Réservez dès maintenant pour une nouvelle jeunesse à vos tissus.
               </p>
             </div>
           </div>
