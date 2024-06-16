@@ -142,13 +142,13 @@ const Automobile = () => {
       src: "/GLE34.png",
     },
     {
-      src: "/Mazdaxm-5.png",
+      src: "/mx5.png",
     },
       {
-      src: "/GLE.png",
+      src: "/gole8s.png",
     },
       {
-      src: "/Passat break.png",
+      src: "/passat.png",
     },
       {
       src: "/Tiguan.png",
