@@ -136,7 +136,7 @@ const Automobile = () => {
 
   const exemples = [
     {
-      src: "/Q8.png",
+      src: "/q81.png",
     },
     {
       src: "/GLE34.jpg",
