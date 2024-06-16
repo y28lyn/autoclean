@@ -10,43 +10,43 @@ const Textile = () => {
       iconColor: "text-green-500",
       features: [
         {
-          name: " ",
+          name: " canapé 2 - 3 places ",
           subname: {},
           prices: {
             second: "50€",
           },
         },
       ],
-      description: ["canapé 2 - 3 places"],
+      description: [""],
     },
     {
       title: "Nettoyage complet",
       iconColor: "text-yellow-500",
       features: [
         {
-          name: "Nettoyage complet",
+          name: "canapé en L",
           subname: {},
           prices: {
             second: "60€",
           },
         },
       ],
-      description: ["canapé en L"],
+      description: [""],
     },
     
     {
       title: "Nettoyage complet",
-      iconColor: "text-yellow-500",
+      iconColor: "text-red-500",
       features: [
         {
-          name: "Nettoyage complet",
+          name: "canapé 4 - 5 places",
           subname: {},
           prices: {
-            second: "60€",
+            second: "75€",
           },
         },
       ],
-      description: ["canapé en L"],
+      description: [""],
     },
   ];
 
