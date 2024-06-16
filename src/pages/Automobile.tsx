@@ -153,7 +153,7 @@ const Automobile = () => {
       src: "tesla-model3.png",
     },
       {
-      src: "/utilitairee.png",
+      src: "/utilitai.png",
     },
   ];
 
