@@ -85,20 +85,20 @@ const Automobile = () => {
         {
           name: "Soin du cuir",
           subname: {
-            first: "véhicule",
+            second: "véhicule",
           },
           prices: {
-            first: "5€",
+            second: "5€",
           },
         },
         {
           name: "Poils d'animaux",
           subname: {
-            first: "véhicule",
+            second: "véhicule",
 
           },
           prices: {
-            first: "10€",
+            second: "10€",
           },
         },
       ],
