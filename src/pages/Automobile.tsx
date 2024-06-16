@@ -85,27 +85,20 @@ const Automobile = () => {
         {
           name: "Soin du cuir",
           subname: {
-            first: "Citadine",
-            second: "SUV",
-            third: "Monospace",
+            first: "véhicule",
           },
           prices: {
             first: "5€",
-            second: "6€",
-            third: "8€",
           },
         },
         {
           name: "Poils d'animaux",
           subname: {
-            first: "Citadine",
-            second: "SUV",
-            third: "Monospace",
+            first: "véhicule",
+
           },
           prices: {
             first: "10€",
-            second: "12€",
-            third: "14€",
           },
         },
       ],
