@@ -68,10 +68,9 @@ const Vitrage = () => {
             </h2>
             <div className="dark:text-gray-200 text-slate-800 mt-2">
               <p>
-                Pour seulement 30€, offrez à vos fenêtres une transparence
-                éclatante avec Autoclean. Nos experts en nettoyage de vitres
-                utilisent des méthodes avancées et des produits respectueux de
-                l'environnement pour assurer un résultat impeccable.
+               Laissez entrer la lumière avec notre service de nettoyage de vitres à domicile chez Autoclean Lyon.
+                Nos professionnels apportent une clarté éclatante à vos fenêtres, qu'il s'agisse de maisons ou d'espaces professionnels. 
+                Dites adieu aux traces et accueillez une vue impeccable. Contactez-nous dès aujourd'hui pour illuminer votre espace.
               </p>
             </div>
           </div>
