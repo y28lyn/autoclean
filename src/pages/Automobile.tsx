@@ -139,7 +139,7 @@ const Automobile = () => {
       src: "/Q8.png",
     },
     {
-      src: "/GLE3.png",
+      src: "/GLE3.jpg",
     },
     {
       src: "/Mazdaxm-5.png",
