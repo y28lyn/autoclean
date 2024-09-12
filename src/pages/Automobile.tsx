@@ -67,9 +67,9 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "35€",
-            second: "40€",
-            third: "45€",
+            first: "30€",
+            second: "35€",
+            third: "40€",
           },
         },
       ],
