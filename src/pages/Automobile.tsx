@@ -43,7 +43,7 @@ const Automobile = () => {
       ],
     },
     {
-      title: "Nettoyage complet",
+      title: "Suplément",
       iconColor: "text-yellow-500",
       features: [
         {
