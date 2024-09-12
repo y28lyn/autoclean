@@ -17,9 +17,9 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "35€",
-            second: "40€",
-            third: "50€",
+            first: "45€",
+            second: "55€",
+            third: "65€",
           },
         },
         {
@@ -30,9 +30,9 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "25€",
-            second: "30€",
-            third: "40€",
+            first: "35€",
+            second: "40€",
+            third: "45€",
           },
         },
       ],
@@ -54,9 +54,9 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "65€",
-            second: "75€",
-            third: "90€",
+            first: "75€",
+            second: "85€",
+            third: "100€",
           },
         },
         {
@@ -67,9 +67,9 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "20€",
-            second: "25€",
-            third: "30€",
+            first: "35€",
+            second: "40€",
+            third: "45€",
           },
         },
       ],
@@ -79,16 +79,16 @@ const Automobile = () => {
       ],
     },
     {
-      title: "Extras",
+      title: "shampouinage  d’un siège ",
       iconColor: "text-red-500",
       features: [
         {
-          name: "Soin du cuir",
+          name: "shampouinage  d’un siège ",
           subname: {
             second: "véhicule",
           },
           prices: {
-            second: "5€",
+            second: "10€",
           },
         },
         {
