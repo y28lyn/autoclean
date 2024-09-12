@@ -80,7 +80,7 @@ const Automobile = () => {
     },
   
     {
-      title: "shampouinage  d’un siège ",
+      title: "suplément",
       iconColor: "text-red-500",
       features: [
         {
@@ -102,7 +102,14 @@ const Automobile = () => {
             second: "10€",
           },
         },
-          {
+         description: [
+        "Nettoyage et traitement spécial pour le cuir",
+        "Élimination des poils d'animaux",
+      ],
+       
+    },
+  ];
+     {
       title: "Nettoyage exterieur",
       iconColor: "text-brown-500",
       features: [
@@ -119,14 +126,9 @@ const Automobile = () => {
             third: "50€",
           },
         },
-        }
+        
       ],
-      description: [
-        "Nettoyage et traitement spécial pour le cuir",
-        "Élimination des poils d'animaux",
-      ],
-    },
-  ];
+     
 
   const gammes = [
     {
