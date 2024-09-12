@@ -20,7 +20,7 @@ const Textile = () => {
       description: [""],
     },
     {
-      title: "Nettoyage complet",
+      title: "Nettoyage canapé ",
       iconColor: "text-yellow-500",
       features: [
         {
@@ -43,6 +43,20 @@ const Textile = () => {
           subname: {},
           prices: {
             second: "75€",
+          },
+        },
+      ],
+      description: [""],
+    },
+    {
+      title: "Nettoyage tapis ",
+      iconColor: "text-brown-500",
+      features: [
+        {
+          name: " tapis moyen ",
+          subname: {},
+          prices: {
+            second: "45€",
           },
         },
       ],
