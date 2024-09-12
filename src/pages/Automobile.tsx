@@ -6,7 +6,7 @@ import Banner from "../components/header/Banner";
 const Automobile = () => {
   const plans = [
     {
-      title: "Nettoyage simple",
+      title: "Nettoyage d'entretien",
       iconColor: "text-green-500",
       features: [
         {
@@ -43,7 +43,7 @@ const Automobile = () => {
       ],
     },
     {
-      title: "Suplément",
+      title: "Nettoyage en profondeur",
       iconColor: "text-yellow-500",
       features: [
         {
@@ -78,6 +78,7 @@ const Automobile = () => {
         "Carrosserie, jantes, vitres, pneus",
       ],
     },
+  
     {
       title: "shampouinage  d’un siège ",
       iconColor: "text-red-500",
@@ -101,6 +102,24 @@ const Automobile = () => {
             second: "10€",
           },
         },
+          {
+      title: "Nettoyage exterieur",
+      iconColor: "text-brown-500",
+      features: [
+        {
+          name: "Nettoyage exterieux",
+          subname: {
+            first: "Citadine",
+            second: "SUV",
+            third: "Monospace",
+          },
+          prices: {
+            first: "40€",
+            second: "45€",
+            third: "50€",
+          },
+        },
+        }
       ],
       description: [
         "Nettoyage et traitement spécial pour le cuir",
