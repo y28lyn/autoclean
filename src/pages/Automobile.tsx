@@ -135,7 +135,7 @@ const Automobile = () => {
         
       ],
      }
-}
+
 
      
 
