@@ -115,26 +115,6 @@ const Automobile = () => {
        
     },
   ];
-     {
-      title: "Nettoyage exterieur",
-      iconColor: "text-brown-500",
-      features: [
-        {
-          name: "Nettoyage exterieux",
-          subname: {
-            first: "Citadine",
-            second: "SUV",
-            third: "Monospace",
-          },
-          prices: {
-            first: "40€",
-            second: "45€",
-            third: "50€",
-          },
-        },
-        
-      ],
-     }
 
 
      
