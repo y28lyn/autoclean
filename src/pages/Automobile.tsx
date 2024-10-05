@@ -3,6 +3,7 @@ import ComparisonSlider from "../components/article/ComparaisonSlider";
 import PlanList from "../components/article/PlanList";
 import Banner from "../components/header/Banner";
 
+
 const Automobile = () => {
   const plans = [
     {
@@ -19,7 +20,7 @@ const Automobile = () => {
           prices: {
             first: "45€",
             second: "55€",
-            third: "65€",
+            third: "60€",
           },
         },
         {
@@ -36,12 +37,16 @@ const Automobile = () => {
           },
         },
       ],
+
+
+      
       description: [
         "Aspirateur, plastiques, vitres intérieures",
-        "Standard + shampoing sièges, tapis, moquette",
+        "Standard + shampoing sièges + tapis + moquette",
         "Carrosserie, jantes, vitres, pneus, intérieur des roues",
       ],
     },
+    
     {
       title: "Nettoyage en profondeur",
       iconColor: "text-yellow-500",
@@ -102,6 +107,7 @@ const Automobile = () => {
             second: "10€",
           },
         },
+      ]
          description: [
         "Nettoyage et traitement spécial pour le cuir",
         "Élimination des poils d'animaux",
@@ -128,6 +134,9 @@ const Automobile = () => {
         },
         
       ],
+     }
+}
+
      
 
   const gammes = [
