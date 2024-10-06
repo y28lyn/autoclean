@@ -65,7 +65,7 @@ const Automobile = () => {
           },
         },
         {
-          name: "Avec nettoyage extérieur",
+          name: "Avec nettoyage extérieur ",
           subname: {
             first: "Citadine",
             second: "SUV",
