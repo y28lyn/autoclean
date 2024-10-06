@@ -3,11 +3,10 @@ import ComparisonSlider from "../components/article/ComparaisonSlider";
 import PlanList from "../components/article/PlanList";
 import Banner from "../components/header/Banner";
 
-
 const Automobile = () => {
   const plans = [
     {
-      title: "Nettoyage d'entretien",
+      title: "Nettoyage simple",
       iconColor: "text-green-500",
       features: [
         {
@@ -20,7 +19,7 @@ const Automobile = () => {
           prices: {
             first: "45€",
             second: "55€",
-            third: "60€",
+            third: "65€",
           },
         },
         {
@@ -37,18 +36,15 @@ const Automobile = () => {
           },
         },
       ],
-
-
-      
       description: [
         "Aspirateur, plastiques, vitres intérieures",
-        "Standard + shampoing sièges + tapis + moquette",
+        "Standard + shampoing sièges, tapis, moquette",
         "Carrosserie, jantes, vitres, pneus, intérieur des roues",
       ],
     },
-    
     {
-      title: "Nettoyage en profondeur",
+      title: "Nettoyage complet",
+      title: "Suplément",
       iconColor: "text-yellow-500",
       features: [
         {
@@ -65,7 +61,7 @@ const Automobile = () => {
           },
         },
         {
-          name: "Avec nettoyage extérieur ",
+          name: "Avec nettoyage extérieur",
           subname: {
             first: "Citadine",
             second: "SUV",
@@ -83,9 +79,8 @@ const Automobile = () => {
         "Carrosserie, jantes, vitres, pneus",
       ],
     },
-  
     {
-      title: "suplément",
+      title: "shampouinage  d’un siège ",
       iconColor: "text-red-500",
       features: [
         {
@@ -107,17 +102,13 @@ const Automobile = () => {
             second: "10€",
           },
         },
-      ]
-         description: [
+      ],
+      description: [
         "Nettoyage et traitement spécial pour le cuir",
         "Élimination des poils d'animaux",
       ],
-       
     },
   ];
-
-
-     
 
   const gammes = [
     {
