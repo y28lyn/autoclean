@@ -44,7 +44,7 @@ const Automobile = () => {
     },
     {
       title: "Nettoyage complet",
-      title: "Suplément",
+      title: "Nettoyage complet",
       iconColor: "text-yellow-500",
       features: [
         {
