@@ -48,17 +48,7 @@ const Textile = () => {
       ],
       description: [""],
     },
-    {
-      title: "Nettoyage tapis ",
-      iconColor: "text-brown-500",
-      features: [
-        {
-          name: " tapis moyen ",
-          subname: {},
-          prices: {
-            second: "45€",
-          },
-        },
+  
       ],
       description: [""],
     },
