@@ -20,7 +20,7 @@ const Textile = () => {
       description: [""],
     },
     {
-      title: "Nettoyage canapé ",
+      title: "Nettoyage complet",
       iconColor: "text-yellow-500",
       features: [
         {
@@ -45,10 +45,6 @@ const Textile = () => {
             second: "75€",
           },
         },
-      ],
-      description: [""],
-    },
-  
       ],
       description: [""],
     },
@@ -95,8 +91,8 @@ const Textile = () => {
             </div>
           </div>
           <ComparisonSlider
-            topImage="/12.jpg"
-            bottomImage="/14.jpg"
+            topImage="/123.png"
+            bottomImage="/tissut2.png"
           />
         </section>
         <PlanList plans={plans} />
