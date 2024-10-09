@@ -37,18 +37,15 @@ const Automobile = () => {
           },
         },
       ],
-
-
-      
       description: [
         "Aspirateur, plastiques, vitres intérieures",
-        "Standard + shampoing sièges + tapis + moquette",
+        "Intérieur standard avec shampoing pour sièges, tapis, moquette",
         "Carrosserie, jantes, vitres, pneus, intérieur des roues",
       ],
     },
     
     {
-      title: "Nettoyage en profondeur",
+      title: "Nettoyage profond",
       iconColor: "text-yellow-500",
       features: [
         {
@@ -85,13 +82,13 @@ const Automobile = () => {
     },
   
     {
-      title: "suplément",
+      title: "Supplément",
       iconColor: "text-red-500",
       features: [
         {
-          name: "shampouinage  d’un siège ",
+          name: "Shampoing pour siège",
           subname: {
-            second: "véhicule",
+            second: "Tout véhicule",
           },
           prices: {
             second: "10€",
@@ -100,8 +97,7 @@ const Automobile = () => {
         {
           name: "Poils d'animaux",
           subname: {
-            second: "véhicule",
-
+            second: "Tout véhicule",
           },
           prices: {
             second: "10€",
