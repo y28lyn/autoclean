@@ -176,14 +176,6 @@ const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/vitrage"
-                    className="block py-2 pl-3 pr-4 md:link md:link-underline md:link-underline-black"
-                  >
-                    Vitrage
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/textile"
                     className="block py-2 pl-3 pr-4 md:link md:link-underline md:link-underline-black"
                   >
@@ -271,14 +263,6 @@ const Navbar: React.FC = () => {
                 className="py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
               >
                 Automobile
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/vitrage"
-                className="py-2 pl-3 pr-4 text-white link link-underline link-underline-black"
-              >
-                Vitrage
               </Link>
             </li>
             <li>
