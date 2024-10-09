@@ -32,22 +32,48 @@
   background-position: 0 100%;
 }
 
-/* Scrollbar */
+/* Scrollbar - Compatible avec mode clair et sombre */
+:root {
+  --scrollbar-track-light: #f0f9ff;
+  --scrollbar-track-dark: #2b2e33;
+  --scrollbar-thumb-light: #333;
+  --scrollbar-thumb-dark: #888;
+  --scrollbar-thumb-hover-light: #111;
+  --scrollbar-thumb-hover-dark: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrollbar-track: var(--scrollbar-track-dark);
+    --scrollbar-thumb: var(--scrollbar-thumb-dark);
+    --scrollbar-thumb-hover: var(--scrollbar-thumb-hover-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --scrollbar-track: var(--scrollbar-track-light);
+    --scrollbar-thumb: var(--scrollbar-thumb-light);
+    --scrollbar-thumb-hover: var(--scrollbar-thumb-hover-light);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 7px; /* Largeur de la scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f0f9ff; /* Couleur de fond de la scrollbar */
+  background-color: var(--scrollbar-track); /* Couleur dynamique du fond de la scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(33, 34, 38); /* Couleur du curseur de la scrollbar */
+  background-color: var(--scrollbar-thumb); /* Couleur dynamique du curseur de la scrollbar */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(19, 20, 22); /* Couleur du curseur au survol */
+  background-color: var(--scrollbar-thumb-hover); /* Couleur dynamique du curseur au survol */
 }
+
 
 /* Carousel */
 /* Styles pour les flèches de navigation */

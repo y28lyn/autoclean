@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../../style.css";
-import Switcher from "../article/Switcher";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,9 +64,6 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="flex gap-2 md:order-2">
-          <div className="p-2 md:p-0">
-            <Switcher />
-          </div>
           <a
             className="text-white ml-2 md:block hidden"
             href="https://www.instagram.com/autoclean.lyon/"
@@ -203,9 +199,6 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <span className="w-[98%] bg-white h-[1px] px-2 my-3 mx-auto"></span>
-                <li>
-                  <Switcher />
-                </li>
                 <li>
                   <p className="block py-2 pl-3 pr-4">07 56 84 73 46</p>
                 </li>
