@@ -107,17 +107,13 @@ const Automobile = () => {
             second: "10€",
           },
         },
-      ]
-         description: [
+      ],
+      description: [
         "Nettoyage et traitement spécial pour le cuir",
         "Élimination des poils d'animaux",
       ],
-       
     },
   ];
-
-
-     
 
   const gammes = [
     {
