@@ -31,16 +31,15 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "35€",
-            second: "40€",
-            third: "45€",
+            first: "80€",
+            second: "95€",
+            third: "105€",
           },
         },
       ],
       description: [
         "Aspirateur, plastiques, vitres intérieures",
-        "Intérieur standard avec shampoing pour sièges, tapis, moquette",
-        "Carrosserie, jantes, vitres, pneus, intérieur des roues",
+        "Carrosserie, jantes, vitres, pneus",
       ],
     },
     
@@ -69,14 +68,14 @@ const Automobile = () => {
             third: "Monospace",
           },
           prices: {
-            first: "30€",
-            second: "35€",
-            third: "40€",
+            first: "105€",
+            second: "120€",
+            third: "140€",
           },
         },
       ],
       description: [
-        "Shampoing sièges, tapis, moquette",
+        "Intérieur standard avec shampoing pour sièges, tapis, moquette",
         "Carrosserie, jantes, vitres, pneus",
       ],
     },
@@ -132,30 +131,39 @@ const Automobile = () => {
   const exemples = [
     {
       src: "/audiQ8.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
     {
       src: "/GLE34.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
     {
       src: "/mx5.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
       {
       src: "/gole8s.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
       {
       src: "/passat.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
       {
       src: "/x5mbw.jpg",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
       {
       src: "/tiguanne.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
       {
       src: "tesla-model3.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
       {
       src: "/utilitai.png",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
   ];
 

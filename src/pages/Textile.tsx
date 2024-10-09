@@ -10,7 +10,7 @@ const Textile = () => {
       iconColor: "text-green-500",
       features: [
         {
-          name: " canapé 2 - 3 places ",
+          name: "Canapé 2 à 3 places",
           subname: {},
           prices: {
             second: "50€",
@@ -24,7 +24,7 @@ const Textile = () => {
       iconColor: "text-yellow-500",
       features: [
         {
-          name: "canapé en L",
+          name: "Canapé en L",
           subname: {},
           prices: {
             second: "60€",
@@ -39,7 +39,7 @@ const Textile = () => {
       iconColor: "text-red-500",
       features: [
         {
-          name: "canapé 4 - 5 places",
+          name: "Canapé 4 à 5 places",
           subname: {},
           prices: {
             second: "75€",
@@ -53,12 +53,15 @@ const Textile = () => {
   const exemples = [
     {
       src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
     {
       src: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
     {
       src: "https://images.unsplash.com/photo-1512212621149-107ffe572d2f?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
   ];
 

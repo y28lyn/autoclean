@@ -38,12 +38,15 @@ const Vitrage = () => {
   const exemples = [
     {
       src: "https://images.unsplash.com/photo-1586634303877-05d91c3a3607?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
     {
       src: "https://images.unsplash.com/photo-1462430400578-427dee6734d2?q=80&w=1908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
     {
       src: "https://images.unsplash.com/photo-1603300227857-2144d620670c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link:"https://www.instagram.com/autoclean.lyon/"
     },
   ];
 
