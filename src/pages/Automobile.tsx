@@ -132,7 +132,6 @@ const Automobile = () => {
     {
       src: "/audiQ8.png",
       link:"https://www.instagram.com/p/CvNWrguoY7z/?img_index=1"
-       subtitle="Audi Q8."
     },
     {
       src: "/GLE34.png",
