@@ -13,7 +13,7 @@ const Textile = () => {
           name: "Canapé 2 à 3 places",
           subname: {},
           prices: {
-            second: "50€",
+            second: "60€",
           },
         },
       ],
@@ -27,7 +27,7 @@ const Textile = () => {
           name: "Canapé en L",
           subname: {},
           prices: {
-            second: "60€",
+            second: "75€",
           },
         },
       ],
@@ -42,7 +42,7 @@ const Textile = () => {
           name: "Canapé 4 à 5 places",
           subname: {},
           prices: {
-            second: "75€",
+            second: "85€",
           },
         },
       ],
