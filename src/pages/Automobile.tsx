@@ -131,15 +131,15 @@ const Automobile = () => {
   const exemples = [
     {
       src: "/audiQ8.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/CvNWrguoY7z/?img_index=1"
     },
     {
       src: "/GLE34.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/C3dQAjEIiFI/?img_index=1"
     },
     {
       src: "/mx5.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/C5Yu7_1opuA/?img_index=1"
     },
       {
       src: "/gole8s.png",
@@ -147,23 +147,23 @@ const Automobile = () => {
     },
       {
       src: "/passat.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/C6MQUbVoCEi/?img_index=1"
     },
       {
       src: "/x5mbw.jpg",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/Cyv_2zoILOY/?img_index=1"
     },
       {
       src: "/tiguanne.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/Czg-RV-IwbO/?img_index=2"
     },
       {
       src: "tesla-model3.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/CwasP7foYo2/"
     },
       {
       src: "/utilitai.png",
-      link:"https://www.instagram.com/autoclean.lyon/"
+      link:"https://www.instagram.com/p/C1KeaLbozWh/?img_index=1"
     },
   ];
 
