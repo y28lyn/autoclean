@@ -38,10 +38,10 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
       </div>
 
       {/* Mobile */}
-      <div className="md:hidden flex items-center justify-center p-8">
+      <div className="md:hidden flex flex-col items-center justify-center p-4 overflow-hidden ">
         <Swiper
           modules={[Pagination]}
-          className="text-base dark:text-white text-[#101314] bg-transparent rounded shadow h-full"
+          className="text-base dark:text-white text-[#101314] bg-transparent rounded shadow h-full w-full"
           pagination={{
             clickable: true,
             dynamicBullets: true,
@@ -53,7 +53,7 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
             <SwiperSlide key={planIndex}>
               <div
                 key={planIndex}
-                className="flex flex-col items-center justify-center dark:bg-[#101314] bg-[#F3F8FF] dark:text-white text-[#101314] shadow-md rounded w-auto h-[60vh] p-6 md:w-1/2"
+                className="flex flex-col items-center justify-center dark:bg-[#101314] bg-[#F3F8FF] dark:text-white text-[#101314] shadow-md rounded w-full h-[70vh] p-6 md:w-1/2"
               >
                 <DollarSignIcon
                   className={`w-12 h-12 ${plan.iconColor} mb-4`}
