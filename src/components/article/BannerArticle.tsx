@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -70,13 +70,17 @@ const BannerArticle: React.FC<Props> = ({ images, title }) => {
           {title}
         </h2>
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="text-base dark:text-white text-[#101314] w-full md:w-[80vw] h-auto bg-transparent rounded shadow mt-8"
           pagination={{
             clickable: true,
             dynamicBullets: true,
             bulletClass: "swiper-pagination-bullet",
             bulletActiveClass: "swiper-pagination-bullet-active",
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
         >
           {images.map((imageSrc, index) => (

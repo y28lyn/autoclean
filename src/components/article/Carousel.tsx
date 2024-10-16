@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -50,7 +50,7 @@ const Carousel = () => {
         </div>
         <div className="relative flex items-center justify-center p-10">
           <Swiper
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay]}
             className="text-base dark:text-white text-[#101314] w-full md:w-[40vw] h-auto md:h-[90vh] bg-transparent rounded shadow"
             pagination={{
               clickable: true,
@@ -59,6 +59,10 @@ const Carousel = () => {
               bulletActiveClass: "swiper-pagination-bullet-active",
             }}
             navigation={isPC}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
           >
             {slideImages.map((imageSrc, index) => (
               <SwiperSlide key={index} className="image-container">

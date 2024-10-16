@@ -1,9 +1,9 @@
 const AccueilArticle = () => {
   return (
     <>
-      <div className="flex flex-col-reverse md:flex-row text-left justify-center items-center h-[600px] mx-auto">
+      <div className="flex flex-col-reverse md:flex-row text-left justify-center items-center h-auto md:h-[600px] max-w-6xl mx-auto">
         {/* Image section */}
-        <div className="p-6 md:flex-1 h-full">
+        <div className="p-6 md:flex-1 h-full md:h-full relative">
           <div className="shadow rounded relative flex items-end px-4 pb-10 pt-40 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8 h-full">
             <div className="absolute inset-0 rounded">
               <img
@@ -103,7 +103,7 @@ const AccueilArticle = () => {
         </div>
 
         {/* Text section */}
-        <div className="flex md:items-center md:justify-center px-4 py-10 sm:px-6 lg:px-8 sm:py-12 lg:py-16 md:flex-1 h-full">
+        <div className="flex md:items-center md:justify-center px-4 py-6 sm:px-6 lg:px-8 sm:py-10 lg:py-16 md:flex-1 relative">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto md:text-left">
             <h2 className="text-3xl font-bold leading-tight dark:text-white text-[#101314] sm:text-4xl">
               Qui sommes-nous ?
