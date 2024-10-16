@@ -63,9 +63,9 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="mt-6">
                       <div className="text-center font-semibold">
-                        <p className="underline">{feature.name}</p>
+                        <p className="text-lg">{feature.name}</p>
                         {plan.description && plan.description[featureIndex] && (
-                          <p className="dark:text-gray-200 text-slate-800 text-center">
+                          <p className="dark:text-gray-200 text-slate-800 text-center text-sm">
                             {plan.description[featureIndex]}
                           </p>
                         )}
@@ -112,9 +112,9 @@ const PlanList: React.FC<PlanListProps> = ({ plans }) => {
               {plan.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="mt-6">
                   <div className="text-center font-semibold">
-                    <p className="underline">{feature.name}</p>
+                    <p className="text-lg">{feature.name}</p>
                     {plan.description && plan.description[featureIndex] && (
-                      <p className="dark:text-gray-200 text-slate-800 text-center">
+                      <p className="dark:text-gray-200 text-slate-800 text-center text-sm">
                         {plan.description[featureIndex]}
                       </p>
                     )}
