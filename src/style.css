@@ -74,7 +74,6 @@
   background-color: var(--scrollbar-thumb-hover); /* Couleur dynamique du curseur au survol */
 }
 
-
 /* Carousel */
 /* Styles pour les flèches de navigation */
 .swiper-button-next,
@@ -100,7 +99,7 @@
 
 /* Styles pour les bullets de pagination */
 .swiper-pagination-bullet {
-  background-color: #ffffff !important; /* Couleur de fond */
+  background-color: #6ba3ff !important; /* Couleur de fond */
   width: 10px !important; /* Largeur */
   height: 10px !important; /* Hauteur */
   margin: 0 8px !important; /* Marge entre les bullets */
@@ -109,7 +108,7 @@
 
 /* Styles pour le bullet actif */
 .swiper-pagination-bullet-active {
-  background-color: white !important; /* Couleur de fond pour le bullet actif */
+  background-color: #6B7280  !important; /* Couleur de fond pour le bullet actif */
 }
 
 /* Styles pour l'image avec le gradient */
