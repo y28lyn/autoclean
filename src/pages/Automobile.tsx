@@ -19,8 +19,8 @@ const Automobile = () => {
           },
           prices: {
             first: "45€",
-            second: "55€",
-            third: "60€",
+            second: "50€",
+            third: "55€",
           },
         },
         {
